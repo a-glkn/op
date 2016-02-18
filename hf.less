@@ -79,7 +79,10 @@
 			line-height: 40px;
 		}
 		.soc{
-			margin-top: 7px;
+			position: absolute;
+			right: 15px;
+			top: 7px;
+			width: 165px;
 			li{
 				float: left;
 				list-style-type: none;
@@ -288,7 +291,7 @@
 
 		.slide-info{
 			color: #fff;
-			
+
 			.slide-head{
 				.font-size(30);
 				.line-height(36);
@@ -577,4 +580,107 @@
         display: block;
         opacity: 1;
     }
+}
+
+
+/* Responsive */
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 991px) {
+	#feedback{
+		height: auto;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		background-attachment: scroll;
+		background-position: center;
+		.container{
+			.btnWrap{
+				margin-top: 20px;
+			}
+		}
+	}
+	#feedback .container .logo{
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	#news .newsCard .newsPhoto, #news .newsCard .newsInfo, #news .newsCard .newsText{
+		padding-right: 15px;
+	}
+	#news .newsCard .newsInfo{
+		padding-top: 20px !important;
+	}
+	#pansions {
+		.filters{
+			.sel-col{
+				width: 100%;
+				select, .custom-sel{
+					width: 100% !important;
+				}
+			}
+			.btn-col{
+				width: 100%;
+				.sub{
+					width: 100%;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+	#pansions {
+		.pansionCard{
+			.pansionInfo{
+				height: 270px !important;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	#header .header-2 ul.main-menu > li{
+		margin-right: 25px;
+	}
+	#pansions {
+		.pansionCard{
+			.pansionInfo{
+				height: 304px !important;
+			}
+		}
+	}
+	#news{
+		.newsCard {
+			> div {
+				height: 171px;
+
+				> div {
+					height: 171px;
+				}
+				&.newsTags{
+					height: auto;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1200px) {
+	#news{
+		.newsCard {
+			> div {
+				height: 212px;
+
+				> div {
+					height: 212px;
+				}
+
+				&.newsTags{
+					height: auto;
+				}
+			}
+		}
+	}
 }

@@ -7,7 +7,7 @@
                       <div class="site-heading">Социальный гериатрический центр</div>
                   </div>
                   <div class="col-md-3 col-md-offset-3">
-                      <ul class="foot-menu">
+                      <ul class="foot-menu visible-md visible-lg">
                           <li><a href="/">Пансионаты Опека</a></li>
                           <li><a href="/">Новости Компании</a></li>
                           <li><a href="/">Услуги и проекты</a></li>
@@ -32,6 +32,7 @@
 
 
   <script src="js/jquery.min.js"></script>
+  <script src="js/cusel.js"></script>
   <script src="js/placeholder.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/less.min.js"></script>

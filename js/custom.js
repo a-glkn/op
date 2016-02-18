@@ -2,6 +2,17 @@ $(document).ready(function () {
 
     $('input[placeholder], textarea[placeholder]').placeholder();
 
+
+    jQuery(document).ready(function(){
+    var params = {
+            changedEl: ".custom-sel",
+            visRows: 10,
+            scrollArrows: true
+        }
+        cuSel(params);
+    });
+
+
     if($('#slider').length) {
 	    $('#slider').slick({
 	    	fade: true,
@@ -76,8 +87,7 @@ $(document).ready(function () {
     });
 
     $('#services .container > button.more').click(function() {
-      $(this).fadeOut(200);
-      console.log(this);
+      $(this).css('display', 'none');
 
       $('#services .wrapper').slideDown(200);
     });

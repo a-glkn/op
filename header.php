@@ -58,12 +58,12 @@
                 </div>
                 <div class="col-md-7">
                     <div class="main-headiing">Частные пансионаты с лечением для пожилых людей</div>
-                    <ul class="func-menu">
+                    <ul class="func-menu visible-md visible-lg">
                         <li><a href="/">Индивидуальный подбор пансионата</a></li>
                         <li><a href="/">Оставить отзыв</a></li>
                     </ul>
 
-                    <ul class="main-menu">
+                    <ul class="main-menu visible-md visible-lg">
                         <li>
                             <a href="/">Пансионаты</a>
                             <ul class="sub-menu">
