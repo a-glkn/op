@@ -18,7 +18,7 @@
     <![endif]-->
 </head>
 <body class="home">
-  <header id="header">
+  <header id="header" class="hidden-xs hidden-sm">
     <div class="header-1">
         <div class="container">
             <div class="row">
