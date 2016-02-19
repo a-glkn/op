@@ -107,7 +107,21 @@
 </header>
 
 <header id="header-mobile" class="hidden-md hidden-lg">
-	<div class="">
-
+	<div class="header-mobile">
+		<div class="menu-tumbler"></div>
+		<div class="mobile-search"></div>
+		<div class="logo"><h99>Социальный<br>гериатрический<br>центр</h99></div>
+		<div class="mobile-menu">
+			<ul>
+				<li><a href="#">Пансионаты</a></li>
+				<li><a href="#">Наши услуги</a></li>
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="search-block">
+			<input class="search-field" type="text" text="">
+		</div>
 	</div>
 </header>
