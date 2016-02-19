@@ -5,7 +5,7 @@
 @base-font-size-px: 10;
 
 @f: "Open Sans", sans-serif;
-@clrBlue: #3c5db9;
+@clrBlue: #2f52b4;
 @clrShadow: #f1f1f1;
 @clrDarkGray: #646464;
 @clrNormGray: #afafaf;
@@ -124,7 +124,7 @@ img {
 		}
 		.sub{
 			width: 100%;
-			height: 40px; 
+			height: 40px;
 			background: #2f52b7;
 			border: 0;
 			color: #fff;
@@ -154,7 +154,6 @@ img {
 			overflow-y: hidden;
 
 			.photoControls {
-				box-shadow: @allSideShadow;
 				position: absolute;
 				bottom: 40px;
 				left: 40px;
@@ -166,7 +165,25 @@ img {
 					height: 40px;
 					margin: 0px;
 					border: none;
-					background-color: rgba(255, 255, 255, 0.8);
+					background-color: rgba(255, 255, 255, 0.75);
+					background-position: center;
+					background-repeat: no-repeat;
+
+					&:hover {
+						background-color: #fff;
+					}
+
+					&.prevPhoto {
+						background-image: url(./img/leftArrow.png);
+					}
+
+					&.nextPhoto {
+						background-image: url(./img/rightArrow.png);
+					}
+
+					&.zoom {
+						background-image: url(./img/plus.png);
+					}
 				}
 			}
 		}
@@ -244,6 +261,11 @@ img {
 				&:after {
 					margin-left: 10px;
 					content: ">";
+				}
+
+				&:hover {
+					background-color: @clrBlue;
+					color: #fff;
 				}
 			}
 		}

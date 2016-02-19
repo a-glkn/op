@@ -40,38 +40,38 @@
     		<div class="row pansionCard">
     			<div class="col-md-6">
     				<div class="item pansionPhoto">
-  						<div class="photoControls">
-  							<button>1</button><button>2</button><button>3</button>
-  						</div>
-  						<img src="./img/01.jpg">
+						<div class="photoControls">
+							<button class="prevPhoto"></button><button class="nextPhoto"></button><button class="zoom"></button>
+						</div>
+						<img src="./img/01.jpg">
             </div>
     			</div>
     			<div class="col-md-6">
     				<div class="item pansionInfo">
-  						<div class="title">
-  							<h2>
-  								Адмиралтейский
-  								<div class="tel">
-  									+7 (812) 748 16 88
-  								</div>
-  							</h2>
-  						</div>
+						<div class="title">
+							<h2>
+								Адмиралтейский
+								<div class="tel">
+									+7 (812) 748 16 88
+								</div>
+							</h2>
+						</div>
 
-  						<p>Пансионат располагается в трехэтажном здании в Адмиралтейском районе по адресу: Рабочий переулок, 3</p>
+						<p>Пансионат располагается в трехэтажном здании в Адмиралтейском районе по адресу: Рабочий переулок, 3</p>
 
-  						<button class="more">Подробнее</button>
-  					</div>
+						<button class="more">Подробнее</button>
+					</div>
     			</div>
     		</div>
 
     		<div class="row pansionCard">
     			<div class="col-md-6 col-md-push-6">
     				<div class="item pansionPhoto">
-  						<div class="photoControls">
-  							<button>1</button><button>2</button><button>3</button>
-  						</div>
-  						<img src="./img/01.jpg">
-  					</div>
+						<div class="photoControls">
+							<button class="prevPhoto"></button><button class="nextPhoto"></button><button class="zoom"></button>
+						</div>
+						<img src="./img/01.jpg">
+					</div>
     			</div>
           <div class="col-md-6 col-md-pull-6">
             <div class="item pansionInfo">
@@ -94,27 +94,27 @@
     		<div class="row pansionCard">
     			<div class="col-md-6">
     				<div class="item pansionPhoto">
-  						<div class="photoControls">
-  							<button>1</button><button>2</button><button>3</button>
-  						</div>
-  						<img src="./img/01.jpg">
-  					</div>
+						<div class="photoControls">
+							<button class="prevPhoto"></button><button class="nextPhoto"></button><button class="zoom"></button>
+						</div>
+						<img src="./img/01.jpg">
+					</div>
     			</div>
     			<div class="col-md-6">
-    				<div class="item pansionInfo">
-  						<div class="title">
-  							<h2>
-  								Адмиралтейский
-  								<div class="tel">
-  									+7 (812) 748 16 88
-  								</div>
-  							</h2>
-  						</div>
+					<div class="item pansionInfo">
+						<div class="title">
+							<h2>
+								Адмиралтейский
+								<div class="tel">
+									+7 (812) 748 16 88
+								</div>
+							</h2>
+						</div>
 
-  						<p>Пансионат располагается в трехэтажном здании в Адмиралтейском районе по адресу: Рабочий переулок, 3</p>
+						<p>Пансионат располагается в трехэтажном здании в Адмиралтейском районе по адресу: Рабочий переулок, 3</p>
 
-  						<button class="more">Подробнее</button>
-  					</div>
+						<button class="more">Подробнее</button>
+					</div>
     			</div>
     		</div>
 

@@ -1,4 +1,4 @@
-<section id="slider">
+<section id="slider" class="hidden-xs hidden-sm">
     <div class="slide slide-1">
         <div class="container">
             <div class="row">
