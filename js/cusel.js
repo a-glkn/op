@@ -471,11 +471,7 @@ function cuselChange(select,setItem) {
       cb.css("min-width", cuselMain.outerWidth() + "px");
 
       cuselMain.addClass("cuselOpen");
-  
-      var cuselArrows = cuselMain.hasClass("cuselScrollArrows");
-      cb.find(".cusel-scroll-pane")
-        .jScrollPaneCusel({showArrows: cuselArrows});
-          
+    
       /* прокручиваем к текущему оптиону */
       cuselScrollToCurent(cb.find(".cusel-scroll-wrap"));
     } else {

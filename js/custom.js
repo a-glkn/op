@@ -123,6 +123,14 @@ function hideAdvancedSearch() {
 }
 
 function fixHomeSliderHeight() {
-	$("#slider, #slider .slide, #slider .slide .slide-info").height( $(window).height() );
-	$(".home #header").css('margin-bottom', $(window).height() - 160);
+    var wW = $('body').outerWidth(),
+        strangeMargin = 15;
+
+    if(wW > 991 - strangeMargin) {
+	   $("#slider, #slider .slide, #slider .slide .slide-info").height( $(window).height() );
+	   $(".home #header").css('margin-bottom', $(window).height() - 160);
+    } else {
+        $("#slider, #slider .slide, #slider .slide .slide-info").css( 'height', 'auto' );
+        $(".home #header").css('margin-bottom', 'auto');
+    }
 }

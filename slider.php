@@ -1,5 +1,5 @@
-<section id="slider" class="hidden-xs hidden-sm">
-    <div class="slide slide-1">
+<section id="slider">
+    <div class="slide slide-1" style="background-image: url(images/s1.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-6">
@@ -15,8 +15,9 @@
                 </div>
             </div>
         </div>
+        <img src="images/s1.jpg">
     </div>
-    <div class="slide slide-2">
+    <div class="slide slide-2" style="background-image: url(images/s2.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-6">
@@ -33,5 +34,6 @@
                 </div>
             </div>
         </div>
+        <img src="images/s2.jpg">
     </div>
 </section>
