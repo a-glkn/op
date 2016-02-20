@@ -103,21 +103,17 @@ $(document).ready(function () {
 
 //	### Mobile Search ###
 	$('.mobile-search').click(function() {
-		var parent = $(this).parent();
+		var parent = $(this).parent().parent().parent();
 
-		if ($(parent).hasClass('opened-search'))
-			doSearch();
-		else
-			$(this).parent().toggleClass('opened-search');
+		if ( ! $(parent).hasClass('opened-search')) {
+			parent.addClass('opened-search');
+            return false;
+        }
 	});
 
-	$('.search-field').keyup(function(e){
-	    if(e.keyCode == 13)
-			doSearch();
-	});
 
-	$('.search-field').focusout(function() {
-		$(this).parents('.header-mobile').toggleClass('opened-search');
+	$('.search-field').blur(function() {
+		$('.header-mobile').removeClass('opened-search');
 	});
 });
 
