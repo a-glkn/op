@@ -116,7 +116,9 @@
 				<li><a href="#">Наши услуги</a></li>
 				<li><a href="#">О компании</a></li>
 				<li><a href="#">Новости</a></li>
-				<li><a href="#">Контакты</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Подбор пансионата</a></li>
+				<li><a href="#">Оставить отзыв</a></li>
 			</ul>
 		</div>
 		<div class="search-block">

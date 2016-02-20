@@ -615,6 +615,9 @@
 			padding: 20px 110px 20px 20px;
 			line-height: 50px;
 			display: block;
+			form{
+				width: 100%;
+			}
 			.search-field {
 				width: 100%;
 				padding: 0px 10px 0px 10px;
@@ -722,50 +725,19 @@
 
 /* Responsive */
 
-@media (max-width: 767px) {
-	#slider{
-
-		.slide{
-			.slide-info{
-				.slide-head{
-					.font-size(24);
-					.line-height(30);
-				}
-				.slide-text{
-					.font-size(18);
-					.line-height(22);
-				}
-			}
-		}
-
-	}
-}
-
-@media (max-width: 480px) {
-	#slider{
-		.slide{
-			.slide-info{
-				.slide-head{
-					.font-size(20);
-					.line-height(26);
-				}
-				.slide-text{
-					.font-size(14);
-					.line-height(18);
-				}
-			}
-		}
-	}
-}
-
 @media (max-width: 991px) {
+	#to-top{
+		display: none;
+	}
 	#slider{
 		position: static;
 
 		.slide{
 			background: none !important;
 			.slide-info{
-				margin-top: 2em;
+				margin-top: 1em;
+			}
+			img{
 			}
 		}
 		.container{
@@ -827,6 +799,90 @@
 
 
 }
+
+@media (max-width: 767px) {
+	#slider{
+
+		.slide{
+			.slide-info{
+				.slide-head{
+					.font-size(20);
+					.line-height(24);
+				}
+				.slide-text{
+					.font-size(16);
+					.line-height(19);
+				}
+			}
+		}
+
+	}
+	#header{
+		height: auto;
+	}
+	#header-mobile .header-mobile .logo{
+		background-position: center;
+	}
+	#header-mobile .header-mobile .logo .sitename{
+		display: none;
+	}
+
+
+	#pansions .pansionCard .pansionInfo .title h2 .tel{
+		float: none !important;
+	}
+}
+
+@media (max-width: 480px) {
+	#slider{
+		.slide{
+			.slide-info{
+				.slide-head{
+					margin-top: 2em;
+					.font-size(16);
+					.line-height(19);
+				}
+				.slide-text{
+					.font-size(13);
+					.line-height(15);
+					display: none;
+				}
+			}
+		}
+	}
+	#pansions .filters .btn-col .sub{
+		font-size: 13px;
+	}
+
+	#feedback .container .btnWrap button{
+		width: 100%;
+		min-width: 240px;
+		margin: 10px 0;
+	}
+}
+
+@media (max-width: 320px) {
+	#slider{
+		.slide{
+			.slide-info{
+				.slide-head{
+					.font-size(14);
+					.line-height(16);
+					font-weight: bold;
+				}
+				.slide-text{
+					.font-size(12);
+					.line-height(14);
+				}
+			}
+		}
+	}
+	#pansions .filters .btn-col .sub{
+		font-size: 12px;
+
+	}
+}
+
 
 @media (min-width: 768px) and (max-width: 991px) {
 
