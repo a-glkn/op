@@ -511,10 +511,11 @@
 	}
 }
 
+@mheaderHeight: 64px;
 #header-mobile {
 	.header-mobile {
 		width: 100%;
-		height: 90px;
+		height: @mheaderHeight;
 		background-color: @clrBlue;
 		color: #fff;
 
@@ -526,7 +527,7 @@
 		}
 
 		.menu-tumbler, .mobile-search {
-			width: 90px;
+			width: @mheaderHeight;
 
 			&:hover {
 				background-color: @clrLightBlue;
@@ -541,26 +542,12 @@
 			background-image: url(./img/menu.png);
 		}
 
-		.mobile-search {
-			height: 100%;
-			background-color: @clrBlue;
-			background-repeat: no-repeat;
-			background-position: center;
-			float: right;
-			background-image: url(./img/search.png);
-			z-index: 6;
-			position: absolute;
-			right: 0;
-			top: 0;
-			border: 0;
-		}
-
 		.logo {
 			background-image: url(./img/logo.png);
 			background-size: 80px;
 			background-position: 110px center;
 			padding-left: 220px;
-			line-height: 90px;
+			line-height: @mheaderHeight;
 			z-index: 4;
 			position: relative;
 			.sitename {
@@ -575,7 +562,7 @@
 			top: 0;
 			width: 100%;
 			height: auto;
-			margin-top: 90px;
+			margin-top: @mheaderHeight;
 			padding-top: 40px;
 			padding-bottom: 30px;
 			border: 1px solid #fff;
@@ -611,13 +598,15 @@
 			position: absolute;
 			top: 0;
 			width: 100%;
-			height: 90px;
-			padding: 20px 110px 20px 20px;
+			height: @mheaderHeight;
+			padding: (@mheaderHeight - 50px)/2 74px (@mheaderHeight - 50px)/2 10px;
 			line-height: 50px;
 			display: block;
+
 			form{
 				width: 100%;
 			}
+
 			.search-field {
 				width: 100%;
 				padding: 0px 10px 0px 10px;
@@ -625,12 +614,31 @@
 				.font-size(20);
 				display: none;
 				position: relative;
+				float: right;
 				z-index: 6;
+				display: none;
+			}
+
+			.mobile-search {
+				height: 100%;
+				background-color: @clrBlue;
+				background-repeat: no-repeat;
+				background-position: center;
+				float: right;
+				background-image: url(./img/search.png);
+				z-index: 6;
+				position: absolute;
+				right: 0;
+				top: 0;
+				border: 0;
+
+				&:hover {
+					background-color: @clrLightBlue;
+				}
 			}
 		}
 
 		&.opened-menu {
-
 			.menu-tumbler {
 				background-image: url(./img/close.png);
 			}
@@ -643,9 +651,6 @@
 		&.opened-search {
 			.logo{
 				display: none;
-			}
-			.search-field {
-				display: block;
 			}
 		}
 	}

@@ -102,18 +102,24 @@ $(document).ready(function () {
 	});
 
 //	### Mobile Search ###
-	$('.mobile-search').click(function() {
-		var parent = $(this).parent().parent().parent();
+	$('.mobile-search').click(function(e) {
+		var parent = $(this).parents('.header-mobile');
+		// console.log(e.result);
 
 		if ( ! $(parent).hasClass('opened-search')) {
 			parent.addClass('opened-search');
-            return false;
+			$('.search-field').animate({width:'toggle'}, 500, function() {
+				$('.search-field').focus();
+			});
+
+			return false;
         }
 	});
 
-
-	$('.search-field').blur(function() {
-		$('.header-mobile').removeClass('opened-search');
+	$('.search-field').focusout(function(e) {
+	    $(this).animate({width:'toggle'}, 500, function() {
+			$('.header-mobile').removeClass('opened-search');
+		});
 	});
 });
 
