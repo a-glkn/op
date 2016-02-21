@@ -86,7 +86,7 @@ $(document).ready(function () {
     	obj.removeClass('active');
     });
 
-    $('#services .container > button.more').click(function() {
+    $('#services .container > .more').click(function() {
       $(this).css('display', 'none');
 
       $('#services .wrapper').slideDown(200);

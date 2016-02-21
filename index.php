@@ -44,7 +44,7 @@
 							<button class="prevPhoto"></button><button class="nextPhoto"></button><button class="zoom"></button>
 						</div>
 						<img src="./img/01.jpg">
-            </div>
+            		</div>
     			</div>
     			<div class="col-md-6">
     				<div class="item pansionInfo">
@@ -59,7 +59,7 @@
 
 						<p>Пансионат располагается в трехэтажном здании в Адмиралтейском районе по адресу: Рабочий переулок, 3</p>
 
-						<button class="more">Подробнее</button>
+						<a href="" class="more">Подробнее</a>
 					</div>
     			</div>
     		</div>
@@ -75,18 +75,18 @@
     			</div>
           <div class="col-md-6 col-md-pull-6">
             <div class="item pansionInfo">
-              <div class="title">
-                <h2>
-                  Адмиралтейский
-                  <div class="tel">
-                    +7 (812) 748 16 88
-                  </div>
-                </h2>
-              </div>
+				<div class="title">
+					<h2>
+						Адмиралтейский
+						<div class="tel">
+							+7 (812) 748 16 88
+						</div>
+					</h2>
+				</div>
 
-              <p>Пансионат располагается в трехэтажном здании в Адмиралтейском районе по адресу: Рабочий переулок, 3</p>
+				<p>Пансионат располагается в трехэтажном здании в Адмиралтейском районе по адресу: Рабочий переулок, 3</p>
 
-              <button class="more">Подробнее</button>
+				<a href="" class="more">Подробнее</a>
             </div>
           </div>
     		</div>
@@ -113,7 +113,7 @@
 
 						<p>Пансионат располагается в трехэтажном здании в Адмиралтейском районе по адресу: Рабочий переулок, 3</p>
 
-						<button class="more">Подробнее</button>
+						<a href="" class="more">Подробнее</a>
 					</div>
     			</div>
     		</div>
@@ -128,125 +128,126 @@
                 <div class="col-md-3">
                     <div class="item serviceCard">
                         <div class="servicePhoto">
-                          <img src="img/03.jpg" alt="">
+							<img src="img/03.jpg" alt="">
                         </div>
                         <div class="serviceInfo">
-                          <h4>Проживание по выбору</h4>
-                          <hr>
-                          <p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
-                          <div class="subBlock">
-                            <button class="more">Узнать подробнее</button>
-                          </div>
+							<h4>Проживание по выбору</h4>
+							<hr>
+							<p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
+							<div class="subBlock">
+								<a href="" class="more">Узнать подробнее</a>
+							</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="item serviceCard">
                         <div class="servicePhoto">
-                          <img src="img/03.jpg" alt="">
+							<img src="img/03.jpg" alt="">
                         </div>
                         <div class="serviceInfo">
-                          <h4>Проживание по выбору</h4>
-                          <hr>
-                          <p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
-                          <div class="subBlock">
-                            <button class="more">Узнать подробнее</button>
-                          </div>
+							<h4>Проживание по выбору</h4>
+							<hr>
+							<p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
+							<div class="subBlock">
+								<a href="" class="more">Узнать подробнее</a>
+							</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="item serviceCard">
                         <div class="servicePhoto">
-                          <img src="img/03.jpg" alt="">
+							<img src="img/03.jpg" alt="">
                         </div>
                         <div class="serviceInfo">
-                          <h4>Проживание по выбору</h4>
-                          <hr>
-                          <p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
-                          <div class="subBlock">
-                            <button class="more">Узнать подробнее</button>
-                          </div>
+							<h4>Проживание по выбору</h4>
+							<hr>
+							<p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
+							<div class="subBlock">
+								<a href="" class="more">Узнать подробнее</a>
+							</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="item serviceCard">
                         <div class="servicePhoto">
-                          <img src="img/03.jpg" alt="">
+							<img src="img/03.jpg" alt="">
                         </div>
                         <div class="serviceInfo">
-                          <h4>Проживание по выбору</h4>
-                          <hr>
-                          <p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
-                          <div class="subBlock">
-                            <button class="more">Узнать подробнее</button>
-                          </div>
+							<h4>Проживание по выбору</h4>
+							<hr>
+							<p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
+							<div class="subBlock">
+								<a href="" class="more">Узнать подробнее</a>
+							</div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <button class="more">Еще услуги<h3>...</h3></button>
-
+			</div>
+            	<a href="#" class="more">Еще услуги<h3>...</h3></a>
             <div class="row wrapper">
+
+
                 <div class="col-md-3">
                     <div class="item serviceCard">
                         <div class="servicePhoto">
-                          <img src="img/03.jpg" alt="">
+							<img src="img/03.jpg" alt="">
                         </div>
                         <div class="serviceInfo">
-                          <h4>Проживание по выбору</h4>
-                          <hr>
-                          <p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
-                          <div class="subBlock">
-                            <button class="more">Узнать подробнее</button>
-                          </div>
+							<h4>Проживание по выбору</h4>
+							<hr>
+							<p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
+							<div class="subBlock">
+								<a href="" class="more">Узнать подробнее</a>
+							</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="item serviceCard">
                         <div class="servicePhoto">
-                          <img src="img/03.jpg" alt="">
+							<img src="img/03.jpg" alt="">
                         </div>
                         <div class="serviceInfo">
-                          <h4>Проживание по выбору</h4>
-                          <hr>
-                          <p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
-                          <div class="subBlock">
-                            <button class="more">Узнать подробнее</button>
-                          </div>
+							<h4>Проживание по выбору</h4>
+							<hr>
+							<p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
+							<div class="subBlock">
+								<a href="" class="more">Узнать подробнее</a>
+							</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="item serviceCard">
                         <div class="servicePhoto">
-                          <img src="img/03.jpg" alt="">
+							<img src="img/03.jpg" alt="">
                         </div>
                         <div class="serviceInfo">
-                          <h4>Проживание по выбору</h4>
-                          <hr>
-                          <p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
-                          <div class="subBlock">
-                            <button class="more">Узнать подробнее</button>
-                          </div>
+							<h4>Проживание по выбору</h4>
+							<hr>
+							<p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
+							<div class="subBlock">
+								<a href="" class="more">Узнать подробнее</a>
+							</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="item serviceCard">
                         <div class="servicePhoto">
-                          <img src="img/03.jpg" alt="">
+							<img src="img/03.jpg" alt="">
                         </div>
                         <div class="serviceInfo">
-                          <h4>Проживание по выбору</h4>
-                          <hr>
-                          <p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
-                          <div class="subBlock">
-                            <button class="more">Узнать подробнее</button>
-                          </div>
+							<h4>Проживание по выбору</h4>
+							<hr>
+							<p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
+							<div class="subBlock">
+								<a href="" class="more">Узнать подробнее</a>
+							</div>
                         </div>
                     </div>
                 </div>

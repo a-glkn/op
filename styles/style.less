@@ -243,6 +243,7 @@ img {
 			}
 
 			.more {
+				display: block;
 				position: absolute;
 				bottom: 40px;
 				left: 40px;
@@ -253,18 +254,29 @@ img {
 				background-color: transparent;
 				color: @clrBlue;
 				font-weight: 100;
-				// font-size: 15px;
 				.font-size(15);
+				.line-height(22);
 				text-transform: uppercase;
+				text-align: center;
 
 				&:after {
+					display: inline-block;
 					margin-left: 10px;
-					content: ">";
+					width: 8px;
+					height: 21px;
+					vertical-align: top;
+					content: "";
+					background: url(../img/rightArrow.png) center no-repeat;
 				}
 
 				&:hover {
 					background-color: @clrBlue;
+					text-decoration: none;
 					color: #fff;
+
+					&::after {
+						background-image: url(../img/rightArrowWh.png);
+					}
 				}
 			}
 		}
@@ -316,7 +328,7 @@ img {
 				bottom: 0px;
 				width: 100%;
 
-				button.more {
+				.more {
 					margin: 10px 0px 20px 0px;
 				}
 			}
@@ -561,18 +573,20 @@ img {
 				// margin-top: 20px;
 			}
 
-			button {
+			a {
 				position: relative;
 				margin: 10px;
 				min-width: 280px;
 				display: inline-block;
 				height: 55px;
+				.line-height(55);
 				border: none;
 				background-color: rgba(255, 255, 255, 0.7);
 				color: @clrBlue;
 
 				&:hover {
 					background-color: #fff;
+					text-decoration: none;
 				}
 
 				&::before {

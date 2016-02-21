@@ -17,7 +17,7 @@
         </div>
       </div>
 
-      
+
 
         <div class="col-md-5 contacts col-sm-12">
           <div class="item">
@@ -38,8 +38,8 @@
     <div class="row">
       <div class="col-md-12 btnWrap">
         <div class="item">
-          <button class="feedback">Связаться с нами</button>
-          <button class="review">Оставить отзыв</button>
+          <a href="" class="feedback">Связаться с нами</a>
+          <a href="" class="review">Оставить отзыв</a>
         </div>
       </div>
     </div>
