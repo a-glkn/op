@@ -4,10 +4,10 @@
     <title>Опека</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet/css" type="text/css" href="style.css">
-    <link rel="stylesheet/less" type="text/css" href="style.less">
-    <link rel="stylesheet/less" type="text/css" href="hf.less">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <!-- <link rel="stylesheet/css" type="text/css" href="styles/style.css"> -->
+    <link rel="stylesheet/less" type="text/css" href="styles/style.less">
+    <link rel="stylesheet/less" type="text/css" href="styles/hf.less">
 
     <link rel="icon" type="image/vnd.microsoft.icon" href="img/fav.ico">
     <link rel="SHORTCUT ICON" href="img/fav.ico">
