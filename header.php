@@ -9,8 +9,8 @@
     <link rel="stylesheet/less" type="text/css" href="style.less">
     <link rel="stylesheet/less" type="text/css" href="hf.less">
 
-    <link rel="icon" type="image/vnd.microsoft.icon" href="images/fav.ico">
-    <link rel="SHORTCUT ICON" href="images/fav.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/fav.ico">
+    <link rel="SHORTCUT ICON" href="img/fav.ico">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>

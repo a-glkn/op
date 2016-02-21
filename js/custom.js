@@ -104,7 +104,6 @@ $(document).ready(function () {
 //	### Mobile Search ###
 	$('.mobile-search').click(function(e) {
 		var parent = $(this).parents('.header-mobile');
-		// console.log(e.result);
 
 		if ( ! $(parent).hasClass('opened-search')) {
 			parent.addClass('opened-search');
