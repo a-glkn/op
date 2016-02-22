@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="styles/bootstrap.css">
     <!-- <link rel="stylesheet/css" type="text/css" href="styles/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="styles/jquery.fancybox.css">
     <link rel="stylesheet/less" type="text/css" href="styles/style.less">
     <link rel="stylesheet/less" type="text/css" href="styles/hf.less">
 

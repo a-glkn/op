@@ -52,7 +52,7 @@
     			<div class="col-md-6">
     				<div class="item pansionPhoto">
 						<div class="photoControls">
-							<button class="prevPhoto"></button><button class="nextPhoto"></button><button class="zoom"></button>
+							<a href="#" class="prevPhoto"></a><a href="#" class="nextPhoto"></a><a href="./img/01.jpg" class="zoom"></a>
 						</div>
 						<img src="./img/01.jpg">
               <div class="overlay">
@@ -88,7 +88,7 @@
     			<div class="col-md-6 col-md-push-6">
     				<div class="item pansionPhoto">
 						<div class="photoControls">
-							<button class="prevPhoto"></button><button class="nextPhoto"></button><button class="zoom"></button>
+							<a href="#" class="prevPhoto"></a><a href="#" class="nextPhoto"></a><a href="./img/01.jpg" class="zoom"></a>
 						</div>
 						<img src="./img/01.jpg">
             <div class="overlay">
@@ -124,7 +124,7 @@
     			<div class="col-md-6">
     				<div class="item pansionPhoto">
 						<div class="photoControls">
-							<button class="prevPhoto"></button><button class="nextPhoto"></button><button class="zoom"></button>
+							<a href="#" class="prevPhoto"></a><a href="#" class="nextPhoto"></a><a href="./img/01.jpg" class="zoom"></a>
 						</div>
 						<img src="./img/01.jpg">
             <div class="overlay">

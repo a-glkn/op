@@ -126,6 +126,12 @@ $(document).ready(function () {
 
     handleFixedMenu();
     $(window).on('scroll', handleFixedMenu);
+
+//	### FancyBox ###
+	$('.zoom').fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
 });
 
 slideHeight = 0;
