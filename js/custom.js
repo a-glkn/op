@@ -87,9 +87,12 @@ $(document).ready(function () {
     });
 
     $('#services .container > .more').click(function() {
-      $(this).css('display', 'none');
+        event.preventDefault();
 
-      $('#services .wrapper').slideDown(200);
+        $(this).css('display', 'none');
+
+        $('#services .wrapper').slideDown(200);
+
     });
 
 //	### Mobile Menu ###

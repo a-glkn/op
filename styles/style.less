@@ -150,13 +150,11 @@ img {
 		.pansionPhoto {
 			position: relative;
 			height: 100%;
-			overflow-y: hidden;
+			overflow: hidden;
 
 			.photoControls {
 				position: absolute;
 				bottom: 40px;
-				left: 40px;
-
 				button {
 					color: @clrBlue;
 					display: inline-block;
@@ -173,17 +171,78 @@ img {
 					}
 
 					&.prevPhoto {
-						background-image: url(./../img/leftArrow.png);
+						background-image: url(../img/leftArrow.png);
 					}
 
 					&.nextPhoto {
-						background-image: url(./../img/rightArrow.png);
+						background-image: url(../img/rightArrow.png);
 					}
 
 					&.zoom {
-						background-image: url(./../img/plus.png);
+						background-image: url(../img/plus.png);
 					}
 				}
+			}
+
+			.overlay{
+				position: absolute;
+				width: 50%;
+				height: 100%;
+				top: 0;
+				right: -50%;
+				opacity: 0;
+				padding: 30px 15px 0;
+				background: url(../img/overt.png) 0 0 repeat;
+				.transition(all 0.4s ease 0s);
+				.price{
+					border-bottom: 1px solid #fff;
+					font-size: 16px;
+					color: #fff;
+					padding-bottom: 10px;
+					span{
+						font-size: 24px;
+					}
+				}
+				.desc{
+					padding-top: 20px;
+					font-size: 16px;
+					line-height: 25px;
+					color: #fff;
+				}
+			}
+		}
+
+		&.pansionCard-left{
+			.pansionPhoto{
+				.overlay{
+					right: -50%;
+				}
+				&:hover{
+					.overlay{
+						right: 0;
+						opacity: 1;
+					}
+				}
+			}
+			.photoControls{
+				left: 40px;
+			}
+		}
+		&.pansionCard-right{
+			.pansionPhoto{
+				.overlay{
+					left: -50%;
+				}
+				&:hover{
+					.overlay{
+						left: 0;
+						opacity: 1;
+					}
+				}
+			}
+
+			.photoControls{
+				right: 40px;
 			}
 		}
 
@@ -339,13 +398,21 @@ img {
 		.btnMoreSlim;
 		display: inline-block;
 		text-transform: uppercase;
-
-		h3 {
+		
+		span {
+			display: block;
 			width: 40px;
 			height: 5px;
 			// line-height: 5px;
 			.line-height(5);
 			margin: 0px auto;
+			text-shadow: none;
+		}
+		&:hover{
+			text-decoration: none;
+			span{
+				text-decoration: none;
+			}
 		}
 	}
 
@@ -407,11 +474,11 @@ img {
 				}
 
 				&.newsDate::before {
-					background-image: url(./../img/calendar.png);
+					background-image: url(../img/calendar.png);
 				}
 
 				&.newsComments::before {
-					background-image: url(./../img/comments.png);
+					background-image: url(../img/comments.png);
 				}
 			}
 
@@ -479,7 +546,7 @@ img {
 
 #feedback {
 	height: 450px;
-	background: url(./../img/coach-full.jpg) center no-repeat fixed;
+	background: url(../img/coach-full.jpg) center no-repeat fixed;
 	padding: 100px 0px 80px 0px;
 	color: #fff;
 	position: relative;
@@ -514,7 +581,7 @@ img {
 			display: inline-block;
 			width: 141px;
 			height: 96px;
-			background: url(./../img/logo.png) 0 0 no-repeat;
+			background: url(../img/logo.png) 0 0 no-repeat;
 		}
 
 		.contacts {
@@ -545,19 +612,19 @@ img {
 							}
 
 							&.socVk {
-								background-image: url(./../img/socVk.png);
+								background-image: url(../img/socVk.png);
 							}
 
 							&.socFb {
-								background-image: url(./../img/socFb.png);
+								background-image: url(../img/socFb.png);
 							}
 
 							&.socTw {
-								background-image: url(./../img/socTw.png);
+								background-image: url(../img/socTw.png);
 							}
 
 							&.socGl {
-								background-image: url(./../img/socGl.png);
+								background-image: url(../img/socGl.png);
 							}
 						}
 					}
@@ -600,11 +667,11 @@ img {
 				}
 
 				&.feedback::before {
-					background-image: url(./../img/phoneBg.png);
+					background-image: url(../img/phoneBg.png);
 				}
 
 				&.review::before {
-					background-image: url(./../img/notes.png);
+					background-image: url(../img/notes.png);
 				}
 			}
 		}

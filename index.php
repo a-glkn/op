@@ -37,13 +37,21 @@
 
       </div>
 
-    		<div class="row pansionCard">
+    		<div class="row pansionCard pansionCard-left">
     			<div class="col-md-6">
     				<div class="item pansionPhoto">
 						<div class="photoControls">
 							<button class="prevPhoto"></button><button class="nextPhoto"></button><button class="zoom"></button>
 						</div>
 						<img src="./img/01.jpg">
+              <div class="overlay">
+                <div class="price">от <span>2250</span> руб./сут.</div>
+                <div class="desc">
+                  Персональные сиделки<br>
+                  Домашняя атмосфера<br>
+                  Комфортные условия
+                </div>
+              </div>
             		</div>
     			</div>
     			<div class="col-md-6">
@@ -64,13 +72,21 @@
     			</div>
     		</div>
 
-    		<div class="row pansionCard">
+    		<div class="row pansionCard pansionCard-right">
     			<div class="col-md-6 col-md-push-6">
     				<div class="item pansionPhoto">
 						<div class="photoControls">
 							<button class="prevPhoto"></button><button class="nextPhoto"></button><button class="zoom"></button>
 						</div>
 						<img src="./img/01.jpg">
+            <div class="overlay">
+              <div class="price">от <span>2250</span> руб./сут.</div>
+              <div class="desc">
+                Персональные сиделки<br>
+                Домашняя атмосфера<br>
+                Комфортные условия
+              </div>
+            </div>
 					</div>
     			</div>
           <div class="col-md-6 col-md-pull-6">
@@ -91,13 +107,21 @@
           </div>
     		</div>
 
-    		<div class="row pansionCard">
+    		<div class="row pansionCard pansionCard-left">
     			<div class="col-md-6">
     				<div class="item pansionPhoto">
 						<div class="photoControls">
 							<button class="prevPhoto"></button><button class="nextPhoto"></button><button class="zoom"></button>
 						</div>
 						<img src="./img/01.jpg">
+            <div class="overlay">
+              <div class="price">от <span>2250</span> руб./сут.</div>
+              <div class="desc">
+                Персональные сиделки<br>
+                Домашняя атмосфера<br>
+                Комфортные условия
+              </div>
+            </div>
 					</div>
     			</div>
     			<div class="col-md-6">
@@ -187,7 +211,7 @@
                 </div>
 
 			</div>
-            	<a href="#" class="more">Еще услуги<h3>...</h3></a>
+            	<a href="#" class="more">Еще услуги<span>...</span></a>
             <div class="row wrapper">
 
 
