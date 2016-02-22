@@ -23,7 +23,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-2">
-                    <a href="/" class="geo">Санкт-петербург</a>
+                    <a href="/" class="geo-btn">Санкт-петербург</a>
                     <ul class="geo-locations-menu sub-menu">
                         <li><a href="/">Санкт-Петербург</a></li>
                         <li class="active"><a href="/">Санкт-Петербург</a></li>
@@ -64,18 +64,7 @@
                     </ul>
 
                     <ul class="main-menu visible-md visible-lg">
-                        <li>
-                            <a href="/">Пансионаты</a>
-                            <ul class="sub-menu">
-                                <li><a href="/">Адмиралтейский</a></li>
-                                <li><a href="/">Европейский</a></li>
-                                <li><a href="/">Городской</a></li>
-                                <li><a href="/">Источник</a></li>
-                                <li><a href="/">Приморский</a></li>
-                                <li><a href="/">Всеволожский</a></li>
-                                <li><a href="/">Южный</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="/">Пансионаты</a></li>
                         <li><a href="/">Наши услуги</a></li>
                         <li><a href="/">О компании</a></li>
                         <li><a href="/">Новости</a></li>
@@ -128,4 +117,47 @@
             </form>
 		</div>
 	</div>
+</header>
+
+<header id="header-fixed" class="hidden-xs hidden-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"><a href="" class="logo"></a></div>
+            <div class="col-md-3">
+                <a href="/" class="geo-btn">Санкт-петербург</a>
+                <ul class="geo-locations-menu sub-menu">
+                    <li><a href="/">Санкт-Петербург</a></li>
+                    <li class="active"><a href="/">Санкт-Петербург</a></li>
+                    <li><a href="/">Петропавловск-Камчатский</a></li>
+                    <li><a href="/">Санкт-Петербург</a></li>
+                    <li><a href="/">Санкт-Петербург</a></li>
+                    <li><a href="/">Санкт-Петербург</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="main-menu visible-md visible-lg">
+                    <li>
+                        <a href="/">Пансионаты</a>
+                        <ul class="sub-menu">
+                            <li><a href="/">Адмиралтейский</a></li>
+                            <li><a href="/">Европейский</a></li>
+                            <li><a href="/">Городской</a></li>
+                            <li><a href="/">Источник</a></li>
+                            <li><a href="/">Приморский</a></li>
+                            <li><a href="/">Всеволожский</a></li>
+                            <li><a href="/">Южный</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">Наши услуги</a></li>
+                    <li><a href="/">О компании</a></li>
+                    <li><a href="/">Новости</a></li>
+                    <li><a href="/">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2">
+                <div class="phone">+7 (812) 748 16 88</div>
+            </div>
+        </div>
+    </div>
 </header>

@@ -51,10 +51,10 @@ $(document).ready(function () {
     $('.search-overlay').on('click', '.close', hideAdvancedSearch);
 
 
-    $('#header').on('click', 'a.geo', function(event) {
+    $('header').on('click', 'a.geo-btn', function(event) {
     	event.preventDefault();
     	var that = $(this);
-    	var div = $('.geo-locations-menu', '#header');
+    	var div = $('.geo-locations-menu', that.parent());
     	div.fadeToggle(300);
 
 
@@ -123,7 +123,12 @@ $(document).ready(function () {
 			$('.header-mobile').removeClass('opened-search');
 		});
 	});
+
+    handleFixedMenu();
+    $(window).on('scroll', handleFixedMenu); 
 });
+
+slideHeight = 0;
 
 function hideAdvancedSearch() {
 	$('#header').removeClass('search-active');
@@ -135,10 +140,22 @@ function fixHomeSliderHeight() {
         strangeMargin = 15;
 
     if(wW > 991 - strangeMargin) {
+        slideHeight = $(window).height();
 	   $("#slider, #slider .slide, #slider .slide .slide-info").height( $(window).height() );
 	   $(".home #header").css('margin-bottom', $(window).height() - 160);
     } else {
+        slideHeight = 0;
         $("#slider, #slider .slide, #slider .slide .slide-info").css( 'height', 'auto' );
         $(".home #header").css('margin-bottom', 'auto');
     }
+}
+
+function handleFixedMenu() {
+    if( ! slideHeight)
+        return false;
+    
+    if($(window).scrollTop() > slideHeight) 
+        $('#header-fixed').fadeIn(300);
+    else
+        $("#header-fixed").fadeOut(200);
 }

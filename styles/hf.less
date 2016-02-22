@@ -17,10 +17,31 @@
 	}
 }
 
-#header{
-	height: 160px;
-	position: relative;
-	z-index: 100;
+.geo-btn{
+	font-size: 13px;
+	line-height: 40px;
+	padding-left: 18px;
+	color: #fff;
+	background: url(../img/geo.png) center left no-repeat;
+	text-decoration: none;
+	&:hover{
+		color: #fff;
+		text-decoration: none;
+	}
+	&:active{
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.geo-locations-menu{
+	display: none;
+	z-index: 99999;
+	.shaddow();
+	width: 224px;
+}
+
+header{
 	.sub-menu{
 		display: none;
 		position: absolute;
@@ -48,30 +69,23 @@
 			}
 		}
 	}
+}
+
+#header{
+	height: 160px;
+	position: relative;
+	z-index: 100;
+	
 	.header-1{
 		height: 40px;
 		color: #fff;
 		border-bottom: 1px solid rgba(255,255,255, .4);
-		.geo{
-			font-size: 13px;
-			line-height: 40px;
-			padding-left: 18px;
-			color: #fff;
-			background: url(../img/geo.png) center left no-repeat;
-			text-decoration: none;
-			&:hover{
-				text-decoration: none;
-			}
-		}
 
 		.geo-locations-menu{
-			display: none;
-			.shaddow();
 			position: absolute;
 			z-index: 1;
 			left: 15px;
 			top: 40px;
-			width: 224px;
 		}
 
 		.site-heading{
@@ -270,6 +284,57 @@
 			height: 21px;
 			background: url(../img/close.png) 0 0 no-repeat;
 		}
+	}
+}
+
+#header-fixed{
+	height: 50px;
+	width: 100%;
+	z-index: 999999;
+	background: #2f52b7;
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	.logo{
+		margin-top: 3px;
+		display: inline-block;
+		width: 141px;
+		height: 96px;
+		background: url(../img/logo3.png) 0 0 no-repeat;
+	}
+	.geo-btn{
+		line-height: 50px;
+		margin-left: 30px;
+		display: inline-block;
+	}
+	.main-menu{
+		list-style-type: none;
+		li{
+			float: left;
+			a{
+				display: inline-block;
+				padding: 0 8px;
+				font-size: 13px;
+				color: #fff;
+				height: 50px;
+				line-height: 50px;
+				border-bottom: 3px solid transparent;
+				text-decoration: none;
+				&:hover{
+					text-decoration: none;
+					border-bottom-color: #99cc33;
+
+				}
+			}
+		}
+	}
+
+	.phone{
+		font-size: 18px;
+		color: #ffffff;
+		text-align: right;
+		line-height: 50px;
 	}
 }
 
@@ -799,6 +864,9 @@
 @media (min-width: 992px) and (max-width: 1199px) {
 	#header .header-2 ul.main-menu > li{
 		margin-right: 25px;
+	}
+	#header-fixed .phone{
+		font-size: 15px;
 	}
 	#pansions {
 		.pansionCard{
