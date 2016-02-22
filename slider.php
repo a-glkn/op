@@ -37,3 +37,4 @@
         <img src="img/s2.jpg">
     </div>
 </section>
+<div id="slider-placeholder"></div>

@@ -72,10 +72,24 @@ header{
 }
 
 #header{
-	height: 160px;
+	height: 170px;
 	position: relative;
-	z-index: 100;
-	
+	// z-index: 100;
+
+	.header-container {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+
+	.placeholder {
+		height: 170px;
+		background-color: @clrBlue;
+		box-shadow: 0px 0px 5px 5px @clrNormGray;
+		z-index: 0;
+	}
+
 	.header-1{
 		height: 40px;
 		color: #fff;
@@ -283,6 +297,7 @@ header{
 			width: 20px;
 			height: 21px;
 			background: url(../img/close.png) 0 0 no-repeat;
+			background-size: contain;
 		}
 	}
 }
@@ -528,7 +543,7 @@ header{
 				position: relative;
 				float: right;
 				z-index: 6;
-				display: none; 
+				display: none;
 				height: 50px;
 			}
 

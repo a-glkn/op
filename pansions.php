@@ -3,7 +3,7 @@
     <? //require_once('slider.php'); ?>
     <div class="clearfix"></div>
 
-	<section id="siteMap">
+	<section id="breadcrumbs">
 		<div class="container">
 			<ul>
 				<li><a href="index.php">Главная</a></li>
