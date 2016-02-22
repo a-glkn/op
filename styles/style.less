@@ -62,6 +62,37 @@ img {
 .container {
 	h1 {
 		.font-size(30);
+
+		&.bigHeader {
+			.font-size(40);
+			margin-bottom: 10px;
+		}
+	}
+}
+
+#siteMap {
+	color: @clrNormGray;
+	.font-size(14);
+
+	a {
+		color: @clrLightBlue;
+	}
+
+	ul {
+		list-style-type: none;
+
+		li {
+			display: inline-block;
+
+			&:not(:first-child) {
+				margin-left: 10px;
+
+				&::before {
+					content: "—";
+					margin-right: 10px;
+				}
+			}
+		}
 	}
 }
 
@@ -87,6 +118,25 @@ img {
 		text-decoration: none;
 	}
 	z-index: 10;
+}
+
+.share {
+	margin-bottom: 35px;
+
+	.shareButton {
+		.font-size(15);
+		.line-height(23);
+
+		&::before {
+			content: " ";
+			display: inline-block;
+			vertical-align: bottom;
+			width: 26px;
+			height: 23px;
+			background: url(../img/share.png) center no-repeat;
+			margin-right: 10px;
+		}
+	}
 }
 
 #pansions {
@@ -318,7 +368,7 @@ img {
 				text-transform: uppercase;
 				text-align: center;
 
-				&:after {
+				&.more-arrow:after {
 					display: inline-block;
 					margin-left: 10px;
 					width: 8px;
@@ -328,14 +378,24 @@ img {
 					background: url(../img/rightArrow.png) center no-repeat;
 				}
 
-				&:hover {
+				&:hover:not(.more-link) {
 					background-color: @clrBlue;
 					text-decoration: none;
 					color: #fff;
 
-					&::after {
+					&.more-arrow:after {
 						background-image: url(../img/rightArrowWh.png);
 					}
+				}
+
+				&.more-link {
+					left:auto;
+					right: 40px;
+					border: none;
+					text-transform: none;
+					box-shadow: none;
+					padding: 0px;
+					width: 150px;
 				}
 			}
 		}
@@ -404,7 +464,7 @@ img {
 		.btnMoreSlim;
 		display: inline-block;
 		text-transform: uppercase;
-		
+
 		span {
 			display: block;
 			width: 40px;
