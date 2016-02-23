@@ -80,24 +80,19 @@
 					<form action="" class="yearsSelector">
 						<ul>
 							<li>
-								<input type="radio" name="year" value="2015" id="year2015"></input>
-								<label for="year2015">2015</label>
+								<a href="#">2015</a>
 							</li>
 							<li>
-								<input type="radio" name="year" value="2014" id="year2014"></input>
-								<label for="year2014">2014</label>
+								<a href="#" class="active">2014</a>
 							</li>
 							<li>
-								<input type="radio" name="year" value="2013" id="year2013"></input>
-								<label for="year2013">2013</label>
+								<a href="#">2013</a>
 							</li>
 							<li>
-								<input type="radio" name="year" value="2012" id="year2012"></input>
-								<label for="year2012">2012</label>
+								<a href="#">2012</a>
 							</li>
 							<li>
-								<input type="radio" name="year" value="2011" id="year2011"></input>
-								<label for="year2011">2011</label>
+								<a href="#">2011</a>
 							</li>
 						</ul>
 					</form>
@@ -110,20 +105,16 @@
 					<form action="" class="monthsSelector">
 						<ul>
 							<li>
-								<input type="radio" name="month" value="nov" id="monthNov"></input>
-								<label for="monthNov">Ноябрь</label>
+								<a href="#">Ноябрь</a>
 							</li>
 							<li>
-								<input type="radio" name="month" value="dec" id="monthDec"></input>
-								<label for="monthDec">Декабрь</label>
+								<a href="#">Декабрь</a>
 							</li>
 							<li>
-								<input type="radio" name="month" value="jan" id="monthJan"></input>
-								<label for="monthJan">Январь</label>
+								<a href="#" class="active">Январь</a>
 							</li>
 							<li>
-								<input type="radio" name="month" value="feb" id="monthFeb"></input>
-								<label for="monthFeb">Февраль</label>
+								<a href="#">Февраль</a>
 							</li>
 						</ul>
 					</form>
