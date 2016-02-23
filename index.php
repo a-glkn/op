@@ -43,7 +43,7 @@
 						<div class="photoControls">
 							<button class="prevPhoto"></button><button class="nextPhoto"></button><button class="zoom"></button>
 						</div>
-						<img src="./img/01.jpg">
+						<img src="./img/p1.jpg">
               <div class="overlay">
                 <div class="price">от <span>2250</span> руб./сут.</div>
                 <div class="desc">
@@ -78,7 +78,7 @@
 						<div class="photoControls">
 							<button class="prevPhoto"></button><button class="nextPhoto"></button><button class="zoom"></button>
 						</div>
-						<img src="./img/01.jpg">
+						<img src="./img/p1.jpg">
             <div class="overlay">
               <div class="price">от <span>2250</span> руб./сут.</div>
               <div class="desc">
@@ -113,7 +113,7 @@
 						<div class="photoControls">
 							<button class="prevPhoto"></button><button class="nextPhoto"></button><button class="zoom"></button>
 						</div>
-						<img src="./img/01.jpg">
+						<img src="./img/p1.jpg">
             <div class="overlay">
               <div class="price">от <span>2250</span> руб./сут.</div>
               <div class="desc">

@@ -23,7 +23,6 @@ $(document).ready(function () {
 	    });
     }
 
-
     fixHomeSliderHeight();
     $(window).on('resize', fixHomeSliderHeight);
 
@@ -127,7 +126,35 @@ $(document).ready(function () {
     handleFixedMenu();
     $(window).on('scroll', handleFixedMenu);
 
-//	### FancyBox ###
+//	### Pansion Galery ###
+	$('.pansion-slider').each(function() {
+		$(this).slick({
+			fade: true,
+			speed: 1000,
+			autoplay: false,
+			dots: false,
+			prevArrow: $(this).prev('.photoControls').find('.prevPhoto'),
+			nextArrow: $(this).prev('.photoControls').find('.nextPhoto')
+		});
+		$(this).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+			var currSlideDiv = $(this).find('.slide')[currentSlide];
+			var currA = $(currSlideDiv).find('a');
+
+			var nextSlideDiv = $(this).find('.slide')[nextSlide];
+			var nextA = $(nextSlideDiv).find('a');
+			var nextHref = $(nextA).attr('href');
+
+			var zoom = $(this).prev('.photoControls').find('.zoom');
+			$(zoom).attr('href', nextHref);
+
+			$(currA).removeClass('zoomOut');
+			$(currA).addClass('zoom');
+
+			$(nextA).removeClass('zoom');
+			$(nextA).addClass('zoomOut');
+		});
+	});
+
 	$('.zoom').fancybox({
 		openEffect	: 'none',
 		closeEffect	: 'none'
