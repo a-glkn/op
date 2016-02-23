@@ -85,12 +85,12 @@ $(document).ready(function () {
     	obj.removeClass('active');
     });
 
-    $('#services .container > .more').click(function() {
+    $('.container .moreWrapper').click(function(event) {
         event.preventDefault();
 
         $(this).css('display', 'none');
 
-        $('#services .wrapper').slideDown(200);
+        $(this).parents('.container').find('.wrapper').slideDown(200);
 
     });
 
@@ -158,6 +158,14 @@ $(document).ready(function () {
 	$('.zoom').fancybox({
 		openEffect	: 'none',
 		closeEffect	: 'none'
+	});
+
+//	### Yandex Socials ###
+	$('.shareButtons').click(function(event) {
+        event.preventDefault();
+
+		console.log(this);
+		$(this).parent().find('.ya-share2').toggle();
 	});
 });
 

@@ -159,7 +159,7 @@
 							<hr>
 							<p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
 							<div class="subBlock">
-								<a href="" class="more">Узнать подробнее</a>
+								<a href="" class="more moreWrapper">Узнать подробнее</a>
 							</div>
                         </div>
                     </div>
@@ -174,7 +174,7 @@
 							<hr>
 							<p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
 							<div class="subBlock">
-								<a href="" class="more">Узнать подробнее</a>
+								<a href="" class="more moreWrapper">Узнать подробнее</a>
 							</div>
                         </div>
                     </div>
@@ -189,7 +189,7 @@
 							<hr>
 							<p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
 							<div class="subBlock">
-								<a href="" class="more">Узнать подробнее</a>
+								<a href="" class="more moreWrapper">Узнать подробнее</a>
 							</div>
                         </div>
                     </div>
@@ -204,17 +204,19 @@
 							<hr>
 							<p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
 							<div class="subBlock">
-								<a href="" class="more">Узнать подробнее</a>
+								<a href="" class="more moreWrapper">Узнать подробнее</a>
 							</div>
                         </div>
                     </div>
                 </div>
 
 			</div>
-            	<a href="#" class="more">Еще услуги<span>...</span></a>
-            <div class="row wrapper">
 
+			<div class="centered">
+	        	<a href="#" class="moreWrapper">Еще услуги<span>...</span></a>
+			</div>
 
+			<div class="row wrapper">
                 <div class="col-md-3">
                     <div class="item serviceCard">
                         <div class="servicePhoto">
@@ -225,7 +227,7 @@
 							<hr>
 							<p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
 							<div class="subBlock">
-								<a href="" class="more">Узнать подробнее</a>
+								<a href="" class="more moreWrapper">Узнать подробнее</a>
 							</div>
                         </div>
                     </div>
@@ -240,7 +242,7 @@
 							<hr>
 							<p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
 							<div class="subBlock">
-								<a href="" class="more">Узнать подробнее</a>
+								<a href="" class="more moreWrapper">Узнать подробнее</a>
 							</div>
                         </div>
                     </div>
@@ -255,7 +257,7 @@
 							<hr>
 							<p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
 							<div class="subBlock">
-								<a href="" class="more">Узнать подробнее</a>
+								<a href="" class="more moreWrapper">Узнать подробнее</a>
 							</div>
                         </div>
                     </div>
@@ -270,7 +272,7 @@
 							<hr>
 							<p>Проживание в комнате для одного, двух, трех и более постояльцев по Вашему выбору</p>
 							<div class="subBlock">
-								<a href="" class="more">Узнать подробнее</a>
+								<a href="" class="more moreWrapper">Узнать подробнее</a>
 							</div>
                         </div>
                     </div>
@@ -365,7 +367,7 @@
           </div>
         </div>
 
-        <button class="more">Все новости ></button>
+        <a href="#" class="more">Все новости ></a>
       </div>
     </section>
 

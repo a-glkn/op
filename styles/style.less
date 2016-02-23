@@ -46,7 +46,10 @@ h1, h2, h4 {
 }
 
 h3 {
+	color: @clrNormGray;
+	.font-size(15);
 	font-weight: bold;
+	text-transform: uppercase;
 }
 
 h1, h3 {
@@ -59,6 +62,10 @@ img {
 	height: auto;
 }
 
+.centered {
+	text-align: center;
+}
+
 .container {
 	h1 {
 		.font-size(30);
@@ -68,6 +75,39 @@ img {
 			margin-bottom: 10px;
 			text-transform: uppercase;
 		}
+	}
+
+	> .more {
+		.btnMoreSlim;
+		float: right;
+		margin-top: 10px;
+		margin-right: 0px;
+		text-align: right;
+	}
+
+	.moreWrapper {
+		.btnMoreSlim;
+		display: inline-block;
+		text-transform: uppercase;
+
+		span {
+			display: block;
+			width: 40px;
+			height: 5px;
+			.line-height(5);
+			margin: 0px auto;
+			text-shadow: none;
+		}
+		&:hover{
+			text-decoration: none;
+			span{
+				text-decoration: none;
+			}
+		}
+	}
+
+	.wrapper {
+		display: none;
 	}
 }
 
@@ -122,32 +162,156 @@ img {
 	z-index: 10;
 }
 
-.share {
-	margin-bottom: 35px;
+.subscribeForm {
+	float: right;
+	height: 40px;
+	padding: 0px;
+	margin: 0px;
+	.line-height(40);
 
-	.shareButton {
+	form {
+		height: 40px;
+		padding: 0px;
+		margin: 0px;
+		.line-height(40);
+
+		> * {
+			display: inline-block;
+			width: 200px;
+			height: 40px;
+		}
+
+		p {
+			.font-size(15);
+		}
+
+		#e-mail {
+			padding: 10px;
+			background-color: @clrLightGray;
+			border: none;
+		}
+
+		button {
+			background-color: @clrBlue;
+			border: none;
+			color: #fff;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.share {
+	margin-bottom: 10px;
+
+	.shareButtons {
 		.font-size(15);
-		.line-height(23);
+		.line-height(40);
 
 		&::before {
 			content: " ";
 			display: inline-block;
-			vertical-align: bottom;
+			vertical-align: middle;
 			width: 26px;
 			height: 23px;
 			background: url(../img/share.png) center no-repeat;
 			margin-right: 10px;
 		}
 	}
+
+	.ya-share2 {
+		display: none;
+		position: absolute;
+		z-index: 10;
+
+		.ya-share2__list {
+			display: inline-block;
+			list-style-type: none;
+			background-color: #fff;
+			box-shadow: 0px 1px 2px 2px @clrShadow;
+
+			li {
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				margin: 0px;
+				.line-height(40);
+				border: 1px solid @clrLightGray;
+				text-align: center;
+
+				a {
+					display: inline-block;
+					width: 40px;
+					height: 40px;
+					.line-height(40);
+					color: @clrNormGray;
+				}
+
+				.likesNum {
+					display: inline-block;
+					width: 30px;
+					height: 40px;
+					float: right;
+					text-align: left;
+				}
+
+				.ya-share2__badge {
+					display: inline-block;
+					width: 18px;
+					height: 15px;
+					vertical-align: middle;
+					background-color: transparent;
+
+					.ya-share2__icon {
+						display: inline-block;
+						width: 18px;
+						height: 15px;
+						background: url(../img/socSpFlat.png) no-repeat;
+					}
+				}
+
+				&.ya-share2__item_service_vkontakte .ya-share2__badge .ya-share2__icon {
+					background-position: 0px 0px;
+				}
+
+				&.ya-share2__item_service_facebook .ya-share2__badge .ya-share2__icon {
+					background-position: -18px 0px;
+				}
+
+				&.ya-share2__item_service_twitter .ya-share2__badge .ya-share2__icon {
+					background-position: -36px 0px;
+				}
+
+				&.ya-share2__item_service_gplus .ya-share2__badge .ya-share2__icon {
+					background-position: -54px 0px;
+				}
+
+				&:hover {
+					a {
+						color: @clrBlue;
+					}
+
+					&.ya-share2__item_service_vkontakte .ya-share2__badge .ya-share2__icon {
+						background-position: 0px -15px;
+					}
+
+					&.ya-share2__item_service_facebook .ya-share2__badge .ya-share2__icon {
+						background-position: -18px -15px;
+					}
+
+					&.ya-share2__item_service_twitter .ya-share2__badge .ya-share2__icon {
+						background-position: -36px -15px;
+					}
+
+					&.ya-share2__item_service_gplus .ya-share2__badge .ya-share2__icon {
+						background-position: -54px -15px;
+					}
+				}
+			}
+		}
+	}
 }
 
 #pansions {
-	h3 {
-		color: @clrNormGray;
-		.font-size(15);
-		text-transform: uppercase;
-	}
-
 	.filters{
 		margin-top: 11px;
 		margin-bottom: 32px;
@@ -475,32 +639,6 @@ img {
 			}
 		}
 	}
-
-	.more {
-		.btnMoreSlim;
-		display: inline-block;
-		text-transform: uppercase;
-
-		span {
-			display: block;
-			width: 40px;
-			height: 5px;
-			// line-height: 5px;
-			.line-height(5);
-			margin: 0px auto;
-			text-shadow: none;
-		}
-		&:hover{
-			text-decoration: none;
-			span{
-				text-decoration: none;
-			}
-		}
-	}
-
-	.wrapper {
-		display: none;
-	}
 }
 
 #news {
@@ -523,6 +661,68 @@ img {
 	h1 {
 		margin-top: 30px;
 		margin-bottom: 10px;
+	}
+
+	.description {
+		margin: 20px 0px;
+		color: @clrDarkGray;
+
+		p {
+			margin-bottom: 20px;
+		}
+	}
+
+	.newsTags {
+		.font-size(15);
+		.line-height(20);
+
+		&::before {
+			margin-right: 30px;
+			content: "Теги";
+			text-transform: uppercase;
+			color: @clrNormGray;
+			font-weight: bold;
+		}
+
+		* {
+			vertical-align: bottom;
+			margin-right: 10px;
+			color: @clrBlue;
+		}
+	}
+
+	.newsFilters {
+		h3 {
+			text-align: left;
+		}
+
+		hr {
+			margin: 10px 0px;
+		}
+
+		ul {
+			list-style-type: none;
+
+			li {
+				display: inline-block;
+
+				input[type="radio"] {
+					display: none;
+				}
+
+				input:checked + label {
+					font-weight: bold;
+				}
+			}
+		}
+
+		.yearsSelector li {
+			width: 50px;
+		}
+
+		.monthsSelector li {
+			width: 24%;
+		}
 	}
 
 	.newsCard {
@@ -604,25 +804,12 @@ img {
 			&::before {
 				margin-right: 5px;
 				content: "Теги:";
-				text-transform: uppercase;
-				color: @clrNormGray;
-				font-weight: bold;
 			}
 
 			* {
-				vertical-align: bottom;
-				margin-right: 10px;
 				color: @clrDarkGray;
 			}
 		}
-	}
-
-	.more {
-		.btnMoreSlim;
-		float: right;
-		margin-top: 10px;
-		margin-right: 0px;
-		text-align: right;
 	}
 }
 
