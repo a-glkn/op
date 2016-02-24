@@ -44,29 +44,6 @@
 		<div class="share">
 			<a href="#" class="shareButtons">Поделиться</a>
 			<br>
-			<!-- <ul class="socialButtons">
-				<li class="socVk">
-					<a href="#">
-						<span class="likesNum">123</span>
-						<span class="socLogo"></span>
-					</a>
-				</li><li class="socFb">
-					<a href="#">
-						<span class="likesNum">12</span>
-						<span class="socLogo"></span>
-					</a>
-				</li><li class="socTw">
-					<a href="#">
-						<span class="likesNum">1</span>
-						<span class="socLogo"></span>
-					</a>
-				</li><li class="socGl">
-					<a href="#">
-						<span class="likesNum">0</span>
-						<span class="socLogo"></span>
-					</a>
-				</li>
-			</ul> -->
 			<script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
 			<script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
 			<div class="ya-share2" data-services="vkontakte,facebook,gplus,twitter"></div>
