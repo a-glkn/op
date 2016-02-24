@@ -52,22 +52,18 @@
     			<div class="col-md-6">
     				<div class="item pansionPhoto">
 						<div class="photoControls">
-							<!-- <button class="prevPhoto"></button><button class="nextPhoto"></button><a href="./img/p1.jpg" class="zoom"></a> -->
 							<a href="#" class="prevPhoto"></a><a href="#" class="nextPhoto"></a><a href="./img/p1.jpg" data-fancybox-group="p1galery" class="zoom"></a>
 						</div>
 						<div class="pansion-slider">
 							<div class="slide">
-								<!-- <a href="./img/p1.jpg" data-fancybox-group="p1galery" class="zoom"><img class="p1photo" src="./img/p1.jpg"></a> -->
 								<a href="./img/p1.jpg" data-fancybox-group="p1galery" class="zoomOut"></a>
 								<img class="p1photo" src="./img/p1.jpg">
 							</div>
 							<div class="slide">
-								<!-- <a href="./img/p2.jpg" data-fancybox-group="p1galery" class="zoom"><img class="p1photo" src="./img/p2.jpg"></a> -->
 								<a href="./img/p2.jpg" data-fancybox-group="p1galery" class="zoom"></a>
 								<img class="p1photo" src="./img/p2.jpg">
 							</div>
 							<div class="slide">
-								<!-- <a href="./img/p3.jpg" data-fancybox-group="p1galery" class="zoom"><img class="p1photo" src="./img/p3.jpg"></a> -->
 								<a href="./img/p3.jpg" data-fancybox-group="p1galery" class="zoom"></a>
 								<img class="p1photo" src="./img/p3.jpg">
 							</div>
