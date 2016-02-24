@@ -3,13 +3,18 @@ $(document).ready(function () {
     $('input[placeholder], textarea[placeholder]').placeholder();
 
 
-    jQuery(document).ready(function(){
+
     var params = {
-            changedEl: ".custom-sel",
-            visRows: 10,
-            scrollArrows: true
-        }
-        cuSel(params);
+        changedEl: ".custom-sel",
+        visRows: 10,
+        scrollArrows: true
+    }
+    cuSel(params);
+
+    $(window).load(function(){
+        $(".panorama").panorama_viewer({
+            repeat: true
+        });
     });
 
 
@@ -202,3 +207,6 @@ function handleFixedMenu() {
     else
         $("#header-fixed").fadeOut(200);
 }
+
+
+

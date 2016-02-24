@@ -1,0 +1,54 @@
+.pv-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.pv-inner.pv-animating {
+  -webkit-transition: background-position 500ms ease-out;
+  -moz-transition: background-position 500ms ease-out;
+  -o-transition: background-position 500ms ease-out;
+  transition: background-position 500ms ease-out;
+}
+
+.pv-inner {
+  display: inline-block;
+  height: 100%;
+  width: auto;
+  cursor: move;
+}
+
+.pv-vertical .pv-inner {
+  width: 100%;
+}
+
+.pv-inner .pv-pano {
+  height: 100%;
+  width: auto;
+}
+
+.pv-vertical .pv-inner .pv-pano {
+  height: auto;
+  width: 100%;
+}
+
+.pv-container .pv-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+}
+.pv-container .pv-overlay i.pvicon-overlay{
+  margin-top: -40px;
+  top: 50%;
+  margin-left: -40px;
+  position: absolute;
+  left: 50%;
+  width: 81px;
+  height: 81px;
+  background-repeat: no-repeat;
+  background-image: url(../img/pano.png);
+  
+}

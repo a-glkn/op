@@ -36,6 +36,8 @@
   <script src="js/placeholder.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/less.min.js"></script>
+  <script src="js/jquery.panorama_viewer.js"></script>
+
   <script src="js/jquery.fancybox.pack.js"></script>
   <script src="js/custom.js"></script>
 
