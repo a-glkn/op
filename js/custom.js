@@ -17,6 +17,16 @@ $(document).ready(function () {
         });
     });
 
+    $('#pansion-description').on('click', '.toggler', function(event) {
+        event.preventDefault();
+        var parent = $(this).parents('.row'),
+            html = $(this).html();
+
+       $('.hidden-text', parent).toggleClass('hidden');
+
+       $(this).html(html == "Развернуть<span>...</span>" ? "Свернуть<span>...</span>" : "Развернуть<span>...</span>");
+    });
+
 
     if($('#slider').length) {
 	    $('#slider').slick({
@@ -26,10 +36,12 @@ $(document).ready(function () {
 	    	autoplaySpeed: 6000,
 	    	dots: true
 	    });
+    
+        fixHomeSliderHeight();
+        $(window).on('resize', fixHomeSliderHeight);
     }
 
-    fixHomeSliderHeight();
-    $(window).on('resize', fixHomeSliderHeight);
+
 
 
     $(window).scroll(function(event) {
@@ -200,7 +212,7 @@ function fixHomeSliderHeight() {
 
 function handleFixedMenu() {
     if( ! slideHeight)
-        return false;
+        slideHeight = 170; //offset from menu
 
     if($(window).scrollTop() > slideHeight)
         $('#header-fixed').fadeIn(300);
