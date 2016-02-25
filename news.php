@@ -37,7 +37,7 @@
 		<div class="subscribeForm">
 			<form action="">
 				<p>Подписаться на новости</p>
-				<input id="e-mail" name="e-mail" type="text" text="" placeholder="Введите Ваш E-mail"><button>Подписаться</button>
+				<div><input id="e-mail" name="e-mail" type="text" text="" placeholder="Введите Ваш E-mail"><button>Подписаться</button></div>
 			</form>
 		</div>
 

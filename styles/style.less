@@ -67,6 +67,46 @@ img {
 	text-align: center;
 }
 
+.socials {
+	margin-top: 10px;
+
+	ul {
+		list-style: none;
+		text-align: right;
+
+		li {
+			display: inline-block;
+
+			a {
+				display: inline-block;
+				width: 33px;
+				height: 33px;
+				background-position: top;
+
+				&:hover {
+					background-position: bottom;
+				}
+
+				&.socVk {
+					background-image: url(../img/socVk.png);
+				}
+
+				&.socFb {
+					background-image: url(../img/socFb.png);
+				}
+
+				&.socTw {
+					background-image: url(../img/socTw.png);
+				}
+
+				&.socGl {
+					background-image: url(../img/socGl.png);
+				}
+			}
+		}
+	}
+}
+
 .container {
 	h1 {
 		.font-size(30);
@@ -176,10 +216,15 @@ img {
 		margin: 0px;
 		.line-height(40);
 
-		> * {
+		p,
+		div > * {
 			display: inline-block;
 			width: 200px;
 			height: 40px;
+		}
+
+		div {
+			display: inline-block;
 		}
 
 		p {
@@ -558,6 +603,10 @@ img {
 	}
 
 	.newsFilters {
+		.item {
+			margin-top: 20px;
+		}
+
 		h3 {
 			text-align: left;
 		}
@@ -733,46 +782,6 @@ img {
 			.e-mail {
 				.font-size(18);
 				text-align: right;
-			}
-
-			.socials {
-				margin-top: 10px;
-
-				ul {
-					list-style: none;
-					text-align: right;
-
-					li {
-						display: inline-block;
-
-						a {
-							display: inline-block;
-							width: 33px;
-							height: 33px;
-							background-position: top;
-
-							&:hover {
-								background-position: bottom;
-							}
-
-							&.socVk {
-								background-image: url(../img/socVk.png);
-							}
-
-							&.socFb {
-								background-image: url(../img/socFb.png);
-							}
-
-							&.socTw {
-								background-image: url(../img/socTw.png);
-							}
-
-							&.socGl {
-								background-image: url(../img/socGl.png);
-							}
-						}
-					}
-				}
 			}
 		}
 	}
@@ -1450,9 +1459,37 @@ img {
   }
 }
 
-#gmaps {
+#maps {
 	position: relative;
-	height: 580px;
+
+	.pansion-bcard {
+		position: absolute;
+		top: 40px;
+		width: 340px;
+		height: 500px;
+		background-color: #fff;
+		border: 1px solid @clrShadow;
+		padding: 20px;
+
+		h3 {
+			text-align: left;
+			margin: 20px 0px 10px 0px;
+		}
+
+		.socials {
+			ul {
+				text-align: left;
+
+				a {
+					background-position: bottom;
+				}
+			}
+		}
+	}
+
+	.map-container {
+		height: 580px;
+	}
 
 	iframe {
 		width: 100%;

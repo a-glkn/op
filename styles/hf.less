@@ -683,7 +683,7 @@ header{
 			display: none !important;
 		}
 	}
-	#feedback{
+	#bcard{
 		height: auto;
 		padding-top: 40px;
 		padding-bottom: 40px;
@@ -693,11 +693,16 @@ header{
 			.btnWrap{
 				margin-top: 20px;
 			}
+			.logo{
+				text-align: center;
+				margin-bottom: 20px;
+			}
+			.name,
+			.contacts .socials ul,
+			.contacts .item * {
+				text-align: center;
+			}
 		}
-	}
-	#feedback .container .logo{
-		text-align: center;
-		margin-bottom: 20px;
 	}
 	#news .newsCard .newsPhoto, #news .newsCard .newsInfo, #news .newsCard .newsText{
 		padding-right: 15px;
@@ -730,6 +735,19 @@ header{
 		}
 	}
 	#pansion-detailed {
+		.pansion-requisites {
+			.requisites {
+				margin: 0px;
+				height: auto;
+
+				.more {
+					position: static;
+					display: block;
+					margin: 20px 0px;
+				}
+			}
+		}
+
 		.advantages {
 			> div[class^="col"] { //columns
 				text-align: center;
@@ -740,7 +758,21 @@ header{
 			}
 		}
 	}
+	.subscribeForm {
+		float: none;
+		height: auto;
 
+		form {
+			height: auto;
+		}
+	}
+	#maps {
+		.pansion-bcard {
+			position: static;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
 }
 
 @media (max-width: 767px) {
@@ -790,6 +822,14 @@ header{
 						line-height: 28px;
 					}
 				}
+			}
+		}
+	}
+
+	#feedback {
+		.container {
+			a {
+				margin: 10px;
 			}
 		}
 	}
