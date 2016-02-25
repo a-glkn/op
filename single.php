@@ -224,6 +224,100 @@
 	<div class="panorama"><img src="img/panorama/1.jpg"></div>
 </section>
 
+<section id="news">
+  <div class="container">
+	<div class="arrow">
+	  <span class="arrow"></span>
+	</div>
+
+	<h1>Наши новости</h1>
+
+	<div class="row newsCard">
+	  <div class="col-md-3">
+		<div class="item newsPhoto">
+		  <img src="./img/04.jpg">
+		</div>
+	  </div>
+	  <div class="col-md-4">
+		<div class="item newsInfo">
+		  <span class="newsDate">29.11.2915</span>
+		  <span class="newsComments">12</span>
+		  <h4 class="newsTitle"><a href="">Награда Правительства Санкт-Петербурга - новый статус проекта СГЦ «ОПЕКА»</a></h4>
+		</div>
+	  </div>
+	  <div class="col-md-5">
+		<div class="item newsText">
+		  <div class="tbl">
+			<div class="cell">
+			  <p>Сегодня в Смольном состоялось завершающее в этом году заседание Совета по инвестициям при губернаторе Санкт-Петербурга.</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+	<div class="row newsCard">
+	  <div class="col-md-3">
+		<div class="item newsPhoto">
+		  <img src="./img/04.jpg">
+		</div>
+	  </div>
+	  <div class="col-md-4">
+		<div class="item newsInfo">
+		  <span class="newsDate">29.11.2915</span>
+		  <span class="newsComments">12</span>
+		  <h4 class="newsTitle"><a href="">Награда Правительства Санкт-Петербурга - новый статус проекта СГЦ «ОПЕКА»</a></h4>
+		</div>
+	  </div>
+	  <div class="col-md-5">
+		<div class="item newsText">
+		  <div class="tbl">
+			<div class="cell">
+			  <p>Сегодня в Смольном состоялось завершающее в этом году заседание Совета по инвестициям при губернаторе Санкт-Петербурга.</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <hr class="clearFix">
+	  <div class="col-md-12 newsTags">
+		<span><a href="">Адмиралтейский</a></span>
+		<span><a href="">Учебный центр</a></span>
+		<span><a href="">Пансионат для пожилых</a></span>
+	  </div>
+	</div>
+
+	<div class="row newsCard">
+	  <div class="col-md-3">
+		<div class="item newsPhoto">
+		  <img src="./img/04.jpg">
+		</div>
+	  </div>
+	  <div class="col-md-4">
+		<div class="item newsInfo">
+		  <span class="newsDate">29.11.2915</span>
+		  <span class="newsComments">12</span>
+		  <h4 class="newsTitle"><a href="">Награда Правительства Санкт-Петербурга - новый статус проекта СГЦ «ОПЕКА»</a></h4>
+		</div>
+	  </div>
+	  <div class="col-md-5">
+		<div class="item newsText">
+		  <div class="tbl">
+			<div class="cell">
+			  <p>Сегодня в Смольном состоялось завершающее в этом году заседание Совета по инвестициям при губернаторе Санкт-Петербурга.</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+	<a href="#" class="more">Все новости ></a>
+  </div>
+</section>
+
+<section id="gmaps">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.4653112381775!2d30.60419931621995!3d60.007359663514976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4697d2cc8159fafb%3A0x9b6b080a8d7ab06a!2z0JHQtdGA0L3Qs9Cw0YDQtNC-0LLQutCw!5e0!3m2!1sru!2sru!4v1456416968845" allowfullscreen></iframe>
+</section>
+
 
 <? require_once('feedback.php'); ?>
 <? require_once('footer.php'); ?>

@@ -267,5 +267,5 @@
       </div>
     </section>
 
-    <? require_once('feedback.php'); ?>
+    <? require_once('bcard.php'); ?>
     <? require_once('footer.php'); ?>

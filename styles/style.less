@@ -679,7 +679,7 @@ img {
 	}
 }
 
-#feedback {
+#bcard {
 	height: 450px;
 	background: url(../img/coach-full.jpg) center no-repeat fixed;
 	padding: 100px 0px 80px 0px;
@@ -705,26 +705,34 @@ img {
 		}
 
 		.name {
-			display: inline-block;
+			text-align: left;
 
 			hr {
 				margin: 10px 0px;
 			}
 		}
 
-		.logo-icon{
-			display: inline-block;
-			width: 141px;
-			height: 96px;
-			background: url(../img/logo.png) 0 0 no-repeat;
+		.logo {
+			text-align: center;
+
+			.logo-icon{
+				display: inline-block;
+				width: 141px;
+				height: 96px;
+				background: url(../img/logo.png) 0 0 no-repeat;
+			}
 		}
 
 		.contacts {
-			text-align: right;
 
 			.phone {
-				margin-top: 20px;
-				.font-size(30);
+				margin: 0px;
+				text-align: right;
+			}
+
+			.e-mail {
+				.font-size(18);
+				text-align: right;
 			}
 
 			.socials {
@@ -732,6 +740,7 @@ img {
 
 				ul {
 					list-style: none;
+					text-align: right;
 
 					li {
 						display: inline-block;
@@ -766,48 +775,55 @@ img {
 				}
 			}
 		}
+	}
 
-		.btnWrap {
-			margin-top: 100px;
-			text-align: center;
+	#feedback {
+		background: none;
+		margin-top: 55px;
+	}
+}
 
-			.item {
-				// margin-top: 20px;
+#feedback {
+	height: 170px;
+	background-color: @clrBlue;
+
+	.container {
+		text-align: center;
+
+		a {
+			position: relative;
+			margin: 55px 10px;
+			min-width: 320px;
+			display: inline-block;
+			height: 55px;
+			.line-height(55);
+			.font-size(20);
+			text-transform: uppercase;
+			border: none;
+			background-color: rgba(255, 255, 255, 0.7);
+			color: @clrBlue;
+
+			&:hover {
+				background-color: #fff;
+				text-decoration: none;
 			}
 
-			a {
-				position: relative;
-				margin: 10px;
-				min-width: 280px;
+			&::before {
 				display: inline-block;
-				height: 55px;
-				.line-height(55);
-				border: none;
-				background-color: rgba(255, 255, 255, 0.7);
-				color: @clrBlue;
+				position: absolute;
+				bottom: 0px;
+				left: 0px;
+				width: 60px;
+				height: 60px;
+				content: " ";
+			}
 
-				&:hover {
-					background-color: #fff;
-					text-decoration: none;
-				}
+			&.feedback::before {
+				background-image: url(../img/phoneBg.png);
+			}
 
-				&::before {
-					display: inline-block;
-					position: absolute;
-					bottom: 0px;
-					left: 0px;
-					width: 60px;
-					height: 60px;
-					content: " ";
-				}
-
-				&.feedback::before {
-					background-image: url(../img/phoneBg.png);
-				}
-
-				&.review::before {
-					background-image: url(../img/notes.png);
-				}
+			&.review::before {
+				background-image: url(../img/notes.png);
 			}
 		}
 	}
@@ -1432,4 +1448,15 @@ img {
   	height: 145px;
   	line-height: 145px;
   }
+}
+
+#gmaps {
+	position: relative;
+	height: 580px;
+
+	iframe {
+		width: 100%;
+		height: 100%;
+		border: none;
+	}
 }
