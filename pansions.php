@@ -51,7 +51,7 @@
     		<div class="row pansionCard pansionCard-left">
     			<div class="col-md-6">
     				<div class="item pansionPhoto">
-						<div class="photoControls">
+						<div class="pansion-slider-controls">
 							<a href="#" class="prevPhoto"></a><a href="#" class="nextPhoto"></a><a href="./img/p1.jpg" data-fancybox-group="p1galery" class="zoom"></a>
 						</div>
 						<div class="pansion-slider">
@@ -100,7 +100,7 @@
     		<div class="row pansionCard pansionCard-right">
     			<div class="col-md-6 col-md-push-6">
     				<div class="item pansionPhoto">
-						<div class="photoControls">
+						<div class="pansion-slider-controls">
 							<!-- <button class="prevPhoto"></button><button class="nextPhoto"></button><a href="./img/p1.jpg" class="zoom"></a> -->
 							<a href="#" class="prevPhoto"></a><a href="#" class="nextPhoto"></a><a href="./img/p1.jpg" data-fancybox-group="p1galery" class="zoom"></a>
 						</div>
@@ -153,7 +153,7 @@
     		<div class="row pansionCard pansionCard-left">
     			<div class="col-md-6">
     				<div class="item pansionPhoto">
-						<div class="photoControls">
+						<div class="pansion-slider-controls">
 							<!-- <button class="prevPhoto"></button><button class="nextPhoto"></button><a href="./img/p1.jpg" class="zoom"></a> -->
 							<a href="#" class="prevPhoto"></a><a href="#" class="nextPhoto"></a><a href="./img/p1.jpg" data-fancybox-group="p1galery" class="zoom"></a>
 						</div>

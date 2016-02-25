@@ -40,7 +40,7 @@
     		<div class="row pansionCard pansionCard-left">
     			<div class="col-md-6">
     				<div class="item pansionPhoto">
-						<div class="photoControls">
+						<div class="pansion-slider-controls">
 							<button class="prevPhoto"></button><button class="nextPhoto"></button><button class="zoom"></button>
 						</div>
 						<img src="./img/p1.jpg">
@@ -75,7 +75,7 @@
     		<div class="row pansionCard pansionCard-right">
     			<div class="col-md-6 col-md-push-6">
     				<div class="item pansionPhoto">
-						<div class="photoControls">
+						<div class="pansion-slider-controls">
 							<button class="prevPhoto"></button><button class="nextPhoto"></button><button class="zoom"></button>
 						</div>
 						<img src="./img/p1.jpg">
@@ -110,7 +110,7 @@
     		<div class="row pansionCard pansionCard-left">
     			<div class="col-md-6">
     				<div class="item pansionPhoto">
-						<div class="photoControls">
+						<div class="pansion-slider-controls">
 							<button class="prevPhoto"></button><button class="nextPhoto"></button><button class="zoom"></button>
 						</div>
 						<img src="./img/p1.jpg">

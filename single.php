@@ -26,11 +26,8 @@
 			</div>
 			<div class="col-md-8">
 				<div class="item pansionPhoto">
-					<div class="pansionPlaces">
-						<div class="places-info">
-							<!-- <h3>Размещение:</h3> <span>от</span>
-							<h1><span>2250</span></h1> <span>руб./сут.</span>
-							<h3>Есть свободные места</h3> -->
+					<div class="pansion-slider-caption">
+						<div class="slider-info">
 							<p>
 								<span class="h3">Размещение:</span>
 								<span class="cost">
@@ -43,7 +40,7 @@
 						</div>
 						<hr>
 					</div>
-					<div class="photoControls">
+					<div class="pansion-slider-controls">
 						<a href="#" class="prevPhoto"></a><a href="#" class="nextPhoto"></a>
 					</div>
 					<div class="pansion-slider">
@@ -161,6 +158,64 @@
 	<div class="cutter">
 		<div class="left"></div>
 		<div class="right"></div>
+	</div>
+</section>
+
+<section id="gallery">
+	<div class="container">
+		<h1>Фотогалерея</h1>
+		<div class="pansionPhoto">
+			<div class="pansion-slider-caption">
+				<div class="slider-info">
+					<ul class="tabSelector">
+						<li><button class="tabButton selected" tab="1">Европейский 1</button>
+						</li><li><button class="tabButton" tab="2">Европейский 2</button>
+						</li><li><button class="tabButton" tab="3">Европейский 3</button></li>
+					</ul>
+				</div>
+			</div>
+			<div class="pansion-slider-controls">
+				<a href="#" class="prevPhoto"></a><a href="#" class="nextPhoto"></a>
+			</div>
+			<div class="pansion-slider-info">
+				<div class="content">
+					<h3></h3>
+					<p></p>
+				</div>
+			</div>
+			<div class="pansion-slider">
+				<div class="slide tab1">
+					<img class="p1photo" src="./img/p11.jpg">
+				</div>
+				<div class="slide tab1">
+					<img class="p1photo" src="./img/p12.jpg" title="Название помещения" description="Краткое описание помещения">
+				</div>
+				<div class="slide tab1">
+					<img class="p1photo" src="./img/p13.jpg">
+				</div>
+
+				<div class="slide tab2">
+					<img class="p1photo" src="./img/p21.jpg">
+				</div>
+				<div class="slide tab2">
+					<img class="p1photo" src="./img/p22.jpg">
+				</div>
+				<div class="slide tab2">
+					<img class="p1photo" src="./img/p23.jpg">
+				</div>
+
+				<div class="slide tab3">
+					<img class="p1photo" src="./img/p31.jpg">
+				</div>
+				<div class="slide tab3">
+					<img class="p1photo" src="./img/p32.jpg">
+				</div>
+				<div class="slide tab3">
+					<img class="p1photo" src="./img/p33.jpg">
+				</div>
+			</div>
+			<div class="pansion-slider-dots"></div>
+		</div>
 	</div>
 </section>
 
