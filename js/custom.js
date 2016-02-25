@@ -155,8 +155,8 @@ $(document).ready(function () {
 				var imgUrl = $(slider.$slides[i]).find('img').attr('src');
 				return '<button type="button" data-role="none" role="button" aria-required="false" tabindex="0"><div class="thumbMark"></div><img class="thumb" src="' + imgUrl + '"></button>';
 			},
-			prevArrow: $(this).prev('.pansion-slider-controls').find('.prevPhoto'),
-			nextArrow: $(this).prev('.pansion-slider-controls').find('.nextPhoto'),
+			prevArrow: $(this).parent().find('.pansion-slider-controls .prevPhoto')[0],
+			nextArrow: $(this).parent().find('.pansion-slider-controls .nextPhoto')[0],
 			slickFilter: '.tab1'
 		});
 		$(this).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
@@ -230,6 +230,7 @@ function chooseSliderTab(e) {
 	$(thisButton).addClass('selected');
 
 	$(slider).slick('slickFilter','.tab'+currTab);
+	$(slider).slick('slickGoTo', 0);
 }
 
 slideHeight = 0;
