@@ -1446,8 +1446,11 @@ img {
 }
 
 #panorama{
+	position: relative;
   .panorama{
     height: 700px;
+    position: relative;
+    z-index: 100;
   }
   .section-heading{
   	text-align: center;
@@ -1457,12 +1460,137 @@ img {
   	height: 145px;
   	line-height: 145px;
   }
+
+	.control-block{
+		z-index: 1000;
+		position: absolute;
+		top: 145px + 30;
+		width: 340px;
+		left: 50%;
+		margin-left: -570px;
+		background: #fff;
+		.control-heading{
+			height: 41px;
+			border-bottom: 1px solid #e5e5e8;
+			font-size: 13px;
+			color: #656565;
+			line-height: 40px;
+			position: relative;
+			z-index: 1000;
+			.clearfix();
+			.sect-1{
+				float: left;
+				width: 215px;
+				position: relative;
+				.arr{
+					position: absolute;
+					top: 12px;
+					width: 9px;
+					height: 17px;
+					cursor: pointer;
+					background-image: url(../img/pan-arr1.png);
+					background-repeat: no-repeat;
+					&.prev{
+						background-position: top left;
+						left: 18px;
+						&:hover{
+							background-position: bottom left;
+						}
+					}
+					&.next{
+						background-position: top right;
+						right: 18px;
+						&:hover{
+							background-position: bottom right;
+						}
+					}
+				}
+				.head{
+					display: none;
+					padding-left: 40px;
+					&.active{
+						display: block;
+					}
+				}
+			}
+			.sect-2{
+				float: left;
+				width: 125px;
+				border-left: 1px solid #e5e5e8;
+				position: relative;
+				.arr{
+					position: absolute;
+					right: 20px;
+					width: 13px;
+					height: 8px;
+					cursor: pointer;
+					background-image: url(../img/pan-arr2.png);
+					background-repeat: no-repeat;
+					&.up{
+						top: 8px;
+						background-position: top right;
+						&:hover{
+							background-position: top left;
+						}
+					}
+					&.down{
+						background-position: bottom right;
+						bottom: 8px;
+						&:hover{
+							background-position: bottom left;
+						}
+					}
+				}
+				.floors{
+					display: none;
+					.floor{
+						display: none;
+						padding-left: 15px;
+						span{
+							font-size: 15px;
+							color: #000000;
+							margin-right: 5px;
+						}
+						&.active{
+							display: block;
+						}
+					}
+					&.active{
+						display: block;
+					}
+				}
+			}
+		}
+		.control-body{
+			padding-top: 25px;
+			padding-bottom: 50px;
+			display: none;
+			.body{
+				display: none;
+				&.active{
+					display: block;
+				}
+			}
+			.desc{
+				padding: 0 30px;
+				line-height: 16px;
+			}
+			.scheme{
+				margin-top: 35px;
+				text-align: center;
+				img{
+					display: inline-block;
+				}
+			}
+		}
+	}  
 }
 
 #maps {
 	position: relative;
 
 	.pansion-bcard {
+		z-index: 20;
 		position: absolute;
 		top: 40px;
 		width: 340px;
@@ -1495,5 +1623,9 @@ img {
 		width: 100%;
 		height: 100%;
 		border: none;
+	}
+
+	.ymaps-2-1-34-controls__control_toolbar, .ymaps-2-1-34-controls__control{
+		display: none !important;
 	}
 }

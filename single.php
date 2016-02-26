@@ -221,14 +221,76 @@
 
 <section id="panorama">
 	<div class="section-heading">3D панорама комплекса «Европейский»</div>
-	<div class="panorama"><img src="img/panorama/1.jpg"></div>
+	<div class="panorama">
+		<img src="img/panorama/1.jpg" class="img" data-src="img/panorama/1.jpg" data-pans="eu1" data-floor="1">
+		<div class="img" data-src="img/panorama/2.jpg" data-pans="eu1" data-floor="2"></div>
+	</div>
+
+	<div class="control-block">
+		<div class="control-heading">
+			<div class="sect-1">
+				<div class="arr prev"></div>
+				<div class="arr next"></div>
+				<div class="head active" data-pans="eu1">Европейский 1</div>
+				<div class="head" data-pans="eu2">Европейский 2</div>
+				<div class="head" data-pans="eu3">Европейский 3</div>
+			</div>
+			<div class="sect-2">
+				<div class="arr up"></div>
+				<div class="arr down"></div>
+
+				<div class="floors active" data-pans="eu1">
+					<div class="floor active" data-floor="1"><span>1</span> Этаж</div>
+					<div class="floor" data-floor="2"><span>2</span> Этаж</div>
+				</div>
+
+				<div class="floors" data-pans="eu2">
+					<div class="floor active" data-floor="1"><span>1</span> Этаж</div>
+					<div class="floor" data-floor="2"><span>2</span> Этаж</div>
+				</div>
+
+				<div class="floors" data-pans="eu3">
+					<div class="floor active" data-floor="1"><span>1</span> Этаж</div>
+					<div class="floor" data-floor="2"><span>2</span> Этаж</div>
+				</div>
+			</div>
+		</div>
+		<div class="control-body">
+			<div class="body active" data-pans="eu1" data-floor="1">
+				<div class="desc">План здания выдвигается при наведении на название пансионата. В нормальном режиме видимой остается только верхняя часть: пансионат и этаж.</div>
+				<div class="scheme"><img src="img/pan-plan.jpg" alt=""></div>
+			</div>
+
+			<div class="body" data-pans="eu1" data-floor="2">
+				<div class="desc">2План здания выдвигается при наведении на название пансионата. В нормальном режиме видимой остается только верхняя часть: пансионат и этаж.</div>
+				<div class="scheme"><img src="img/pan-plan.jpg" alt=""></div>
+			</div>
+
+			<div class="body" data-pans="eu2" data-floor="1">
+				<div class="desc">eu2-1 План здания выдвигается при наведении на название пансионата. В нормальном режиме видимой остается только верхняя часть: пансионат и этаж.</div>
+				<div class="scheme"><img src="img/pan-plan.jpg" alt=""></div>
+			</div>
+
+			<div class="body" data-pans="eu2" data-floor="2">
+				<div class="desc">eu2-2 План здания выдвигается при наведении на название пансионата. В нормальном режиме видимой остается только верхняя часть: пансионат и этаж.</div>
+				<div class="scheme"><img src="img/pan-plan.jpg" alt=""></div>
+			</div>
+
+			<div class="body" data-pans="eu3" data-floor="1">
+				<div class="desc">eu3-1 План здания выдвигается при наведении на название пансионата. В нормальном режиме видимой остается только верхняя часть: пансионат и этаж.</div>
+				<div class="scheme"><img src="img/pan-plan.jpg" alt=""></div>
+			</div>
+
+			<div class="body" data-pans="eu3" data-floor="2">
+				<div class="desc">eu3-2 План здания выдвигается при наведении на название пансионата. В нормальном режиме видимой остается только верхняя часть: пансионат и этаж.</div>
+				<div class="scheme"><img src="img/pan-plan.jpg" alt=""></div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section id="news">
   <div class="container">
-	<div class="arrow">
-	  <span class="arrow"></span>
-	</div>
 
 	<h1>Наши новости</h1>
 
@@ -338,8 +400,8 @@
 		</div>
 	</div>
 	<div class="map-container">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.4653112381775!2d30.60419931621995!3d60.007359663514976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4697d2cc8159fafb%3A0x9b6b080a8d7ab06a!2z0JHQtdGA0L3Qs9Cw0YDQtNC-0LLQutCw!5e0!3m2!1sru!2sru!4v1456416968845" allowfullscreen></iframe>
-		<!-- <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=0JSG2O1LgbE8I5ZymnQjRiDdUTcEWALg&width=100%&height=580&lang=ru_RU&sourceType=constructor"></script> -->
+		<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.4653112381775!2d30.60419931621995!3d60.007359663514976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4697d2cc8159fafb%3A0x9b6b080a8d7ab06a!2z0JHQtdGA0L3Qs9Cw0YDQtNC-0LLQutCw!5e0!3m2!1sru!2sru!4v1456416968845" allowfullscreen></iframe> -->
+		<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=0JSG2O1LgbE8I5ZymnQjRiDdUTcEWALg&width=100%&height=580&lang=ru_RU&sourceType=constructor"></script>
 	</div>
 </section>
 

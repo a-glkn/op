@@ -17,6 +17,98 @@ $(document).ready(function () {
         });
     });
 
+    $('.control-block').mousemove(function(event) {
+        $('.control-body', this).stop(true, true).slideDown(400);
+    });
+
+
+    $('.control-block').mouseleave(function(event) {
+        $('.control-body', this).stop(true, true).slideUp(200);
+    });
+    
+    $('.control-block').on('click', '.next', function(event) {
+        var $block = $(this).parent().parent().parent(),
+            next = $('.head.active', $block).removeClass('active').next();
+
+        if(next.length)
+            next.addClass('active');
+        else
+            $('.head:first', $block).addClass('active');
+
+        var pans = $('.head.active', $block).data('pans');
+
+        changeFloor_Pans($block, pans);
+    });
+
+    $('.control-block').on('click', '.prev', function(event) {
+        var $block = $(this).parent().parent().parent(),
+            prev = $('.head.active', $block).removeClass('active').prev();
+
+        if(prev.index() != 1) // strange behaviour. FIX later
+            prev.addClass('active');
+        else
+            $('.head:last', $block).addClass('active');
+
+        var pans = $('.head.active', $block).data('pans');
+
+        changeFloor_Pans($block, pans);
+    });
+
+
+    $('.control-block').on('click', '.up', function(event) {
+        var $block = $(this).parent().parent().parent(),
+            $cont = $('.floors.active', $block)
+            next = $('.floor.active', $cont).removeClass('active').next();
+
+        console.log(next);
+        if(next.length)
+            next.addClass('active');
+        else
+            $('.floor:first', $cont).addClass('active');
+
+        var pans = $('.head.active', $block).data('pans');
+
+        changeFloor_Pans($block, pans);
+    });
+
+    $('.control-block').on('click', '.down', function(event) {
+        var $block = $(this).parent().parent().parent(),
+            $cont = $('.floors.active', $block)
+            prev = $('.floor.active', $cont).removeClass('active').prev();
+
+        if(prev.length)
+            prev.addClass('active');
+        else
+            $('.floor:last', $cont).addClass('active');
+
+        var pans = $('.head.active', $block).data('pans');
+
+        changeFloor_Pans($block, pans);
+    });
+
+
+
+
+    function changeFloor_Pans($block, pans) {
+        $('.floors', $block).removeClass('active');
+        $('.floors[data-pans="' + pans + '"]', $block).addClass('active');
+
+        var floor = $('.floors.active .floor.active', $block).data('floor');
+
+        $('.body', $block).removeClass('active');
+        $('.body[data-pans="' + pans + '"][data-floor="' + floor + '"]', $block).addClass('active');
+
+        var pano = $('.panorama .img[data-pans="' + pans + '"][data-floor="' + floor + '"]'),
+            panoSrc = pano.data('src');
+
+        $('.panorama img.active').removeClass('active');
+        pano.addClass('active');
+
+        $('.pv-inner').css('background', 'url("' + panoSrc + '") repeat');
+    }
+
+
+
     $('#pansion-description').on('click', '.toggler', function(event) {
         event.preventDefault();
         var parent = $(this).parents('.row'),
