@@ -17,7 +17,7 @@
 			<h1 class="bigHeader">Пансионаты для пожилых</h1>
 			<hr>
 			<div class="share">
-				<a href="#" class="shareButton">Поделиться</a>
+				<a href="#" class="shareButtons">Поделиться</a>
 			</div>
 			<h3>Поиск по параметрам проживания</h3>
 			<div class="row filters">
