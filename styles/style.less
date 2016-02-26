@@ -791,6 +791,55 @@ img {
 			}
 		}
 	}
+
+	&.news-view {
+		h2 {
+			margin: 30px 0px;
+			text-align: center;
+			color: @clrDarkGray;
+		}
+
+		.image-holder {
+			height: 440px;
+			position: relative;
+			text-align: center;
+
+			.item {
+				padding: 20px 0px;
+				height: 100%;
+			}
+
+			div[class^="col"] {
+				height: 100%;
+
+				&:empty {
+					height: 0px;
+				}
+			}
+
+			img {
+				width: auto;
+				max-width: 100%;
+				height: 100%;
+				display: inline-block;
+
+			}
+
+			p {
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+				// margin: 0px;
+				text-align: left;
+				color: @clrNormGray;
+			}
+		}
+
+		.row p {
+			margin: 25px 0px;
+			color: @clrDarkGray;
+		}
+	}
 }
 
 #bcard {
@@ -1692,5 +1741,129 @@ img {
 
 	.ymaps-2-1-34-controls__control_toolbar, .ymaps-2-1-34-controls__control{
 		display: none !important;
+	}
+}
+
+#comments {
+	margin-top: 70px;
+
+	.more {
+		margin: 0px;
+		padding: 10px 0px;
+		float: right;
+		width: 200px;
+		.line-height(20);
+		max-width: none;
+		text-align: center;
+		border: 1px solid @clrBlue;
+	}
+
+	h3 {
+		text-align: left;
+		.line-height(40);
+	}
+
+	.comments {
+		list-style-type: none;
+	}
+
+	.comment {
+		position: relative;
+		display: block;
+
+		> div {
+			height: 100%;
+		}
+
+		p {
+			margin-bottom: 10px;
+		}
+
+		.date {
+			color: @clrNormGray;
+		}
+
+		.author {
+			width: 160px;
+			padding-right: 10px;
+			float: left;
+
+			.ava {
+				width: 80px;
+				height: 80px;
+			}
+		}
+
+		.comment-text {
+			margin-left: 160px;
+		}
+
+		.comments {
+			margin-left: 80px;
+
+			.comments {
+				margin-left: 0px;
+			}
+		}
+	}
+
+	.centered {
+		position: relative;
+
+		hr {
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			margin: 0px;
+		}
+
+		.moreWrapper {
+			margin: 40px 0px;
+			padding: 0px 40px;
+			background-color: #fff;
+			width: auto;
+			max-width: none;
+			position: relative;
+			z-index: 1;
+		}
+	}
+
+	.add-comment {
+		textarea {
+			display: block;
+			width: 100%;
+			height: 140px;
+			border: none;
+			background-color: @clrLightGray;
+			padding: 10px;
+		}
+
+		button {
+			margin: 10px 0px;
+			width: 220px;
+			height: 40px;
+			.line-height(40);
+			.font-size(15);
+			text-transform: uppercase;
+			background-color: @clrBlue;
+			border: none;
+			color: #fff;
+		}
+	}
+
+	.back-to-news {
+		height: 100px;
+		margin: 20px 0px;
+		text-align: right;
+		.line-height(100);
+
+		a::before {
+			display: inline-block;
+			content: " ";
+			width: 8px;
+			height: 14px;
+			background: url(../img/leftArrow.png) center no-repeat;
+			margin-right: 10px;
+		}
 	}
 }

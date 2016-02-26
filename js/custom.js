@@ -25,7 +25,7 @@ $(document).ready(function () {
     $('.control-block').mouseleave(function(event) {
         $('.control-body', this).stop(true, true).slideUp(200);
     });
-    
+
     $('.control-block').on('click', '.next', function(event) {
         var $block = $(this).parent().parent().parent(),
             next = $('.head.active', $block).removeClass('active').next();
@@ -197,7 +197,10 @@ $(document).ready(function () {
     $('.container .moreWrapper').click(function(event) {
         event.preventDefault();
 
-        $(this).css('display', 'none');
+        $(this).hide();
+
+		if ($(this).parent('.centered').length)
+			$(this).parent('.centered').hide();
 
         $(this).parents('.container').find('.wrapper').slideDown(200);
 

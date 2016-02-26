@@ -773,6 +773,24 @@ header{
 			margin-bottom: 20px;
 		}
 	}
+	#news.news-view {
+		.image-holder {
+			height: auto;
+
+			.item {
+				padding: 0px;
+			}
+
+			div[class^="col"]:not(:empty) {
+				height: auto;
+			}
+
+			p {
+				position: static;
+				margin-bottom: 0px;
+			}
+		}
+	}
 }
 
 @media (max-width: 767px) {
@@ -830,6 +848,17 @@ header{
 		.container {
 			a {
 				margin: 10px;
+			}
+		}
+	}
+}
+
+@media (max-width: 650px) {
+	#comments {
+		.comment {
+			.comment-text {
+				margin: 10px 0px;
+				clear: both;
 			}
 		}
 	}

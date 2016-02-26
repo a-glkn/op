@@ -1,6 +1,5 @@
 
     <? require_once('header.php'); ?>
-    <? //require_once('slider.php'); ?>
     <div class="clearfix"></div>
 
 	<section id="breadcrumbs">
