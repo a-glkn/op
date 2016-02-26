@@ -9,7 +9,7 @@
 	</div>
 </section>
 
-<setcion id="pansions">
+<section id="pansions">
 	<div class="container">
 		<h1 class="bigHeader">Услуги и проекты компании</h1>
 		<h1>Пансионаты для пожилых</h1>
@@ -198,7 +198,7 @@
 		</div>
 
 	</div>
-</setcion>
+</section>
 
 <section id="services">
 	<div class="container">

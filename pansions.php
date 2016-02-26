@@ -12,7 +12,7 @@
 		</div>
 	</section>
 
-    <setcion id="pansions">
+    <section id="pansions">
     	<div class="container">
 			<h1 class="bigHeader">Пансионаты для пожилых</h1>
 			<hr>
@@ -204,7 +204,7 @@
     		</div>
 
     	</div>
-    </setcion>
+    </section>
 
     <? require_once('bcard.php'); ?>
     <? require_once('footer.php'); ?>

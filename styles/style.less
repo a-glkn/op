@@ -554,6 +554,67 @@ img {
 			}
 		}
 	}
+
+	&.allPansions {
+		background-color: #fff;
+
+		.servicePhoto {
+			height: 200px;
+		}
+
+		.serviceCard {
+			border: 1px solid @clrShadow;
+			padding: 0px;
+
+			.serviceInfo {
+				height: 220px;
+				margin-top: 25px;
+
+				h2 {
+					margin: 0px;
+					text-transform: uppercase;
+				}
+
+				h3 {
+					margin: 10px 0px;
+				}
+
+				.hr {
+					text-align: center;
+					height: 0px;
+					.line-height(0);
+					margin: 10px 0px 25px 0px;
+
+					hr {
+						display: inline-block;
+						width: 60px;
+						margin: 0px;
+						border-bottom-width: 2px;
+					}
+				}
+
+				p {
+					margin: 0px 10px;
+					.font-size(13);
+					.line-height(18);
+
+					&.address {
+						height: 54px;
+					}
+				}
+			}
+
+			.subBlock {
+				a {
+					width: 220px;
+					height: 40px;
+					.line-height(40);
+					border: 1px solid @clrBlue;
+					margin: 30px 0px;
+				}
+			}
+		}
+	}
 }
 
 #news {
