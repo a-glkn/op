@@ -62,7 +62,7 @@
 
 <section id="comments">
 	<div class="container">
-		<a href="#" class="more moreWrapper">Оставить комментарий</a>
+		<a href="#createComment" class="more" id="toCommentCreate">Оставить комментарий</a>
 		<h3>Комментарии (7)</h3>
 
 		<hr>
@@ -153,7 +153,7 @@
 					<img src="./img/ava.png" alt="" class="ava">
 				</div>
 				<div class="comment-text">
-					<form action="">
+					<form action="" id="createComment">
 						<textarea name="name" rows="8" cols="40" placeholder="Ваше сообщение"></textarea>
 						<button type="button" name="add-comment">Комментировать</button>
 					</form>
