@@ -730,7 +730,7 @@ header{
 	#pansions {
 		.pansionCard{
 			.pansionInfo{
-				height: 270px !important;
+				height: 270px;
 			}
 		}
 	}
@@ -906,6 +906,23 @@ header{
 						line-height: 20px;
 					}
 				}
+			}
+			.pansionInfo {
+				height: auto;
+				padding-bottom: 40px;
+			}
+		}
+	}
+
+	#pansions, #pansion-detailed, #gallery {
+		.more {
+			position: static;
+			margin: 10px 0px;
+
+			&.more-link {
+				display: inline-block;
+				min-width: 0;
+				width: auto;
 			}
 		}
 	}
