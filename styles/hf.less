@@ -58,6 +58,8 @@ header{
 				color: #656565;
 				font-size: 15px;
 				text-decoration: none;
+				height: 36px;
+				line-height: 36px;
 				&:hover{
 					color: #2f52b6;
 					text-decoration: none;
@@ -325,9 +327,11 @@ header{
 	}
 	.main-menu{
 		list-style-type: none;
-		li{
+
+		>li{
+			position: relative;
 			float: left;
-			a{
+			>a{
 				display: inline-block;
 				padding: 0 8px;
 				font-size: 13px;
@@ -342,7 +346,34 @@ header{
 
 				}
 			}
+			.sub-menu{
+				width: 172px;
+				left: -10px;
+				top: 100%;
+				display: none;
+				li{
+					width: auto;
+					a{
+						color: #656565;
+						border: 0;
+						&:hover{
+							color: #2f52b6;
+						}
+					}
+				}
+			}
+
+			&.active{
+				.sub-menu{
+					-webkit-animation: fadeInFromNone 0.6s ease;
+				    -moz-animation: fadeInFromNone 0.6s ease;
+				    -o-animation: fadeInFromNone 0.6s ease;
+				    animation: fadeInFromNone 0.6s ease;
+					display: block;
+				}
+			}
 		}
+	
 	}
 
 	.phone{
@@ -791,6 +822,17 @@ header{
 			}
 		}
 	}
+
+	#panorama{
+		.control-block{
+			margin-left: -340px / 2;
+		}
+	}
+
+	#pansion-detailed .advantages .item{
+		margin: 0 !important;
+		margin-bottom: 15px !important;
+	}
 }
 
 @media (max-width: 767px) {
@@ -845,11 +887,18 @@ header{
 	}
 
 	#feedback {
-		.container {
-			a {
-				margin: 10px;
+		height: auto;
+		.container{
+			a{
+				margin: 20px 0 0 0;
+				width: 100%;
+				min-width: 240px;
+				&:last-child{
+					margin-bottom: 20px;
+				}
 			}
 		}
+
 	}
 }
 
@@ -862,6 +911,61 @@ header{
 			}
 		}
 	}
+
+	#pansion-detailed .pansionPhoto{
+		margin-bottom: 120px;
+		overflow: visible;
+	}
+
+	#pansion-detailed .pansionPhoto .pansion-slider-caption{
+		top: 100%;
+		background: none;
+		color: #333;
+	}
+
+
+	#gallery .pansionPhoto{
+		overflow: visible;
+	}
+	#gallery .pansionPhoto .pansion-slider-caption{
+		top: -120px;
+		height: 80px;
+		color: #333;
+		background: none;
+	}
+	#gallery .pansionPhoto .pansion-slider-dots{
+		display: none;
+	}
+	#gallery .pansionPhoto .tabSelector li .tabButton.selected{
+		color: #333;
+	}
+	#gallery .pansionPhoto .tabSelector li{
+		height: 30px;
+		line-height: 30px;
+	}
+	#gallery .pansionPhoto .tabSelector li .tabButton{
+		font-weight: normal;
+		color: #777;
+		border: 0;
+		height: 30px;
+		font-size: 12px;
+		line-height: 30px;
+	}
+	#gallery h1{
+		margin-bottom: 140px;
+	}
+	#pansion-description .hr {
+		&:before, &:after{
+			background: transparent;
+		}
+	}
+}
+
+@media (max-width: 560px) {
+	#gallery .pansionPhoto .tabSelector li{
+		width: 100%;
+	}
+
 }
 
 @media (max-width: 480px) {
@@ -913,6 +1017,10 @@ header{
 			}
 		}
 	}
+	
+	#pansion-detailed .pansionPhoto .pansion-slider-caption .slider-info p .cost{
+		margin: 0;
+	}
 
 	#pansions, #pansion-detailed, #gallery {
 		.more {
@@ -925,6 +1033,60 @@ header{
 				width: auto;
 			}
 		}
+	}
+}
+
+@media (max-width: 400px) {
+	#pansions{
+		.pansionCard{
+			.pansionPhoto{
+				.overlay{
+					.price{
+						font-size: 14px;
+						span{
+							font-size: 16px;
+						}
+					}
+					.desc{
+						font-size: 12px;
+						line-height: 14px;
+						padding-top: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	#pansion-detailed .more.comment{
+		display: block;
+		float: none;
+	}
+
+	#pansion-detailed .advantages .item{
+		width: 100%;
+	}
+	#pansion-detailed .advantages .item .upper-layer{
+		width: 100%;
+	}
+
+	.share .shareButtons{
+		.font-size(12);
+		.line-height(40);
+	}
+
+	#feedback .container a{
+		font-size: 16px;
+	}
+
+	#panorama .control-block{
+		width: 300px;
+		margin-left: -150px;
+		.control-heading .sect-1{
+			width: 195px;	
+		}	
+		.control-heading .sect-2{
+			width: 105px;	
+		}	
 	}
 }
 

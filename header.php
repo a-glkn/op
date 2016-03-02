@@ -66,7 +66,18 @@
 	                    </ul>
 
 	                    <ul class="main-menu visible-md visible-lg">
-	                        <li><a href="/">Пансионаты</a></li>
+	                        <li>
+                                <a href="/">Пансионаты</a>
+                                <ul class="sub-menu">
+                                    <li><a href="/">Адмиралтейский</a></li>
+                                    <li><a href="/">Европейский</a></li>
+                                    <li><a href="/">Городской</a></li>
+                                    <li><a href="/">Источник</a></li>
+                                    <li><a href="/">Приморский</a></li>
+                                    <li><a href="/">Всеволожский</a></li>
+                                    <li><a href="/">Южный</a></li>
+                                </ul>
+                            </li>
 	                        <li><a href="/">Наши услуги</a></li>
 	                        <li><a href="/">О компании</a></li>
 	                        <li><a href="/">Новости</a></li>

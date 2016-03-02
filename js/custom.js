@@ -2,8 +2,6 @@ $(document).ready(function () {
 
     $('input[placeholder], textarea[placeholder]').placeholder();
 
-
-
     var params = {
         changedEl: ".custom-sel",
         visRows: 10,
@@ -54,7 +52,6 @@ $(document).ready(function () {
         changeFloor_Pans($block, pans);
     });
 
-
     $('.control-block').on('click', '.up', function(event) {
         var $block = $(this).parent().parent().parent(),
             $cont = $('.floors.active', $block)
@@ -86,9 +83,6 @@ $(document).ready(function () {
         changeFloor_Pans($block, pans);
     });
 
-
-
-
     function changeFloor_Pans($block, pans) {
         $('.floors', $block).removeClass('active');
         $('.floors[data-pans="' + pans + '"]', $block).addClass('active');
@@ -106,7 +100,6 @@ $(document).ready(function () {
 
         $('.pv-inner').css('background', 'url("' + panoSrc + '") repeat');
     }
-
 
 
     $('#pansion-description').on('click', '.toggler', function(event) {
@@ -146,7 +139,6 @@ $(document).ready(function () {
     });
     $('#to-top').on('click', function(event) {
         event.preventDefault();
-        /* Act on the event */
         $("body, html").animate({scrollTop: 0}, '400');
     });
 
@@ -179,6 +171,8 @@ $(document).ready(function () {
     $('.main-menu').on('mousemove', '>li', function(event) {
     	var obj = $(this);
 
+        console.log('1');
+
     	if(	! $('ul', obj).length )
     		return false;
 
@@ -194,7 +188,7 @@ $(document).ready(function () {
     	obj.removeClass('active');
     });
 
-    $('.container .moreWrapper').click(function(event) {
+    $('#news .moreWrapper').click(function(event) {
         event.preventDefault();
 
         $(this).hide();
@@ -206,7 +200,7 @@ $(document).ready(function () {
 
     });
 
-//	### Mobile Menu ###
+	//### Mobile Menu ###
 	$('.menu-tumbler').click(function() {
 		$(this).parent().toggleClass('opened-menu');
 	});
@@ -215,7 +209,7 @@ $(document).ready(function () {
 		$(this).parents('.header-mobile').toggleClass('opened-menu');
 	});
 
-//	### Mobile Search ###
+	//### Mobile Search ###
 	$('.mobile-search').click(function(e) {
 		var parent = $(this).parents('.header-mobile');
 
@@ -238,7 +232,7 @@ $(document).ready(function () {
     handleFixedMenu();
     $(window).on('scroll', handleFixedMenu);
 
-//	### Pansion Galery ###
+	//### Pansion Galery ###
 	$('.pansion-slider').each(function() {
 		$(this).slick({
 			fade: true,
@@ -268,9 +262,8 @@ $(document).ready(function () {
 	$('.tabSelector .tabButton').click(chooseSliderTab);
 	$('.tabSelector .tabButton.selected').click();
 
-	// $('.tabSelector').each(function());
 
-//	### Yandex Socials ###
+	//### Yandex Socials ###
 	$('.shareButtons').click(function(event) {
         event.preventDefault();
 

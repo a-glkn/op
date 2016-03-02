@@ -612,6 +612,12 @@ img {
 					.line-height(40);
 					border: 1px solid @clrBlue;
 					margin: 30px 0px;
+
+					&:hover{
+					    background-color: #2f52b4;
+					    text-decoration: none;
+					    color: #fff;
+					}
 				}
 			}
 		}
@@ -821,7 +827,7 @@ img {
 			img {
 				width: auto;
 				max-width: 100%;
-				height: 100%;
+				height: auto;
 				display: inline-block;
 
 			}
@@ -966,7 +972,6 @@ img {
 
 	.pansion-requisites {
 		.item {
-			height: 410px;
 		}
 
 		.requisites {
@@ -1365,7 +1370,6 @@ img {
 
 		.pansion-slider-controls {
 			position: absolute;
-			bottom: 40px;
 			height: 40px;
 			white-space: nowrap;
 
@@ -1430,10 +1434,8 @@ img {
 	}
 
 	.more {
+		margin-top: 40px;
 		display: block;
-		position: absolute;
-		bottom: 40px;
-		left: 40px;
 		width: 220px;
 		border: 1px solid @clrBlue;
 		box-shadow: @allSideShadow;
@@ -1495,7 +1497,7 @@ img {
 			position: absolute;
 			top: 50%;
 			width: 100%;
-
+			margin-top: -20px;
 			a {
 				position: absolute;
 
